@@ -3,7 +3,6 @@ main = putStrLn "Loading q01-10.hs"
 xs = [1,2,3,4]      -- nums for testing
 cs = ['x','y','z']  -- chars for testing
 
-
 -- Problem 01
 -- myLast, not using builtin last for obvious reasons.
 
@@ -20,7 +19,6 @@ myLastf xs = foldl1 (\_ y -> y) xs
 
 q01c = myLastf [1,2,3,4]
 q01d = myLastf ['x','y','z']
-
 
 -- Problem 02, myButLast
 
