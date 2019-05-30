@@ -61,7 +61,6 @@ case expression of pattern -> result
                    yada yada ...
 -}
 
-
 describeList :: [a] -> String
 describeList xs = "The list is " ++ case xs of [] -> "empty."
                                                [x] -> "a singleton list."
