@@ -85,8 +85,8 @@ compress [] = []
 compress [x] = [x]
 compress (x0:x1:xs)
   | (x0 == x1 ) = compress rest
-  | otherwise = x0 : compress (x1:xs)
+  | otherwise = x0 : compress rest
   where rest = (x1:xs)
 
-
---data Nest a = [ List [ Nest a] ] deriving (Eq, Show) -- | [ [ Nest a ] ]
+--compress2 :: (Eq a) => [a] -> [a]
+compress2 xs = foldl1 (\x y -> if ([last x] == y) then x else x ++ y) $ map (\x -> [x]) xs
