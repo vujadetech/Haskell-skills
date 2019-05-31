@@ -1,4 +1,4 @@
-main = putStrLn "Loading q01-10.hs"
+--q01_10 = putStrLn "Loading q01-10.hs"
 
 xs = [1,2,3,4]      -- nums for testing
 cs = ['x','y','z']  -- chars for testing
@@ -57,3 +57,36 @@ myRev xs = foldl (flip (:)) [] xs
 myRev2 :: [a] -> [a]
 myRev2 [] = []
 myRev2 (x:xs) = myRev2 xs ++ [x]
+
+-- Problem 06, isPal
+isPal :: (Eq a) => [a] -> Bool
+isPal xs = (myRev xs) == xs
+
+-- Problem 07, flatten a list, TODO
+data NestedList a = Elem a | List [NestedList a] deriving (Eq, Show)
+
+nestedElemQ :: NestedList a -> Bool
+nestedElemQ (Elem _) = True
+nestedElemQ _        = False
+
+nestedListQ :: NestedList a -> Bool
+nestedListQ nl = not $ nestedElemQ nl
+
+--car :: NestedList a -> NestedList a
+
+flatten :: NestedList a -> [a]
+flatten (List []) = []
+flatten (Elem x) = [x]
+flatten (List [ Elem x ]) = [x]
+
+-- Problem 08, compress
+compress :: (Eq a) => [a] -> [a]
+compress [] = []
+compress [x] = [x]
+compress (x0:x1:xs)
+  | (x0 == x1 ) = compress rest
+  | otherwise = x0 : compress (x1:xs)
+  where rest = (x1:xs)
+
+
+--data Nest a = [ List [ Nest a] ] deriving (Eq, Show) -- | [ [ Nest a ] ]

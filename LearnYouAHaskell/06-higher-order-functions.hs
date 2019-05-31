@@ -123,7 +123,7 @@ numSqRoots = length $ takeWhile (< 1000) $ partialSumsInf 1 sqrt -- => 131
 -- So mine is admittedly more verbose than the the book's version,
 -- but that's ok since I'm just experimenting. :D On the upside, this version
 -- is more general since it permits an infinite stream,
--- and can used with arbitrary functions besides sqrt.
+-- and can be used with arbitrary functions besides sqrt.
 
 -- function composition example.
 func_comp = map (negate . abs) [5,-3,-6,7,-3,2,-19,24]
