@@ -27,3 +27,12 @@ l1 = lockerLookup 101 lockers
 l2 = lockerLookup 102 lockers
 l3 = lockerLookup 110 lockers
 l4 = lockerLookup 105 lockers
+
+-- Recursive data structures
+--data List a = Empty | Cons { listHead :: a, listTail :: List a} deriving (Show, Read, Eq, Ord)
+data List a = Empty | Cons a (List a) deriving (Show, Read, Eq, Ord)
+
+xs = 3 `Cons` (4 `Cons` (5 `Cons` Empty))
+--xss = (42 `Cons` xs)
+xss = xs `Cons` Empty
+ys = Cons 1 $ Cons 2 Empty

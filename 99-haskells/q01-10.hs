@@ -72,6 +72,11 @@ nestedElemQ _        = False
 nestedListQ :: NestedList a -> Bool
 nestedListQ nl = not $ nestedElemQ nl
 
+-- Problem 07, alternate nested list definition using the List datatype as
+-- given in Chapter 8 of LYAH (Learn you a Haskell).
+data List a = Empty | Cons a (List a) deriving (Show, Read, Eq, Ord)
+
+
 --car :: NestedList a -> NestedList a
 
 flatten :: NestedList a -> [a]
