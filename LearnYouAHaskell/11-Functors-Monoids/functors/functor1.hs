@@ -1,3 +1,5 @@
+import Data.Either
+
 --
 sq x = x * x
 --
@@ -13,7 +15,7 @@ xss = xs `Cons` Empty
 ys = Cons 1 $ Cons 2 Empty
 zs = fmap sq xs -- Cons 9 (Cons 16 (Cons 25 Empty))
 
-
+-- Trees
 
 data Tree a = EmptyTree | Node a (Tree a) (Tree a) deriving (Show, Read, Eq)
 
@@ -43,3 +45,20 @@ instance Functor Tree where
 
 et = EmptyTree
 squaredNumsTree = fmap sq numsTree
+
+-- /Trees
+
+--recipRoot x
+--  | x == 0    = Left "x is zero"
+--  | otherwise = x
+
+recipRoot 0 = Left "zero"
+recipRoot x
+  | (x < 0) = Left "negative"
+  | otherwise = Right (1 / (sqrt x))
+
+roots = map recipRoot $ [-1..3] ++ [0]
+validRoots = rights roots
+invalidRoots = lefts roots
+
+--either :: (a -> c) -> (b -> c) -> Either a b -> c
