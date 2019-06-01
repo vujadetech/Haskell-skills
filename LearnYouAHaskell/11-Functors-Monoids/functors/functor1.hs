@@ -9,6 +9,20 @@ data List a = Empty | Cons a (List a) deriving (Show, Read, Eq, Ord)
 instance Functor List where
   fmap f Empty = Empty
   fmap f (Cons x xs) = Cons (f x) (fmap f xs)
+-- This obeys the functor laws since fmap id = id since
+-- 1) fmap id Empty = Empty and
+-- 2) fmap id (Cons x xs) = Cons (id x) (fmap id xs) = (Cons x xs)
+-- and the composition law since
+-- 1) fmap (f . g) Empty = f (g Empty) = f Empty = Empty and also
+--    fmap f (fmap g Empty) = fmap f Empty = Empty.
+-- 2) Induction can be used for the composition.
+-- (Empty is the base case that was just proven.) Suppose
+-- fmap (f . g) xs = fmap f (fmap g xs) as the inductive hypothesis.
+-- fmap (f . g) (Cons x xs) = Cons ((f . g) x) (fmap (f . g) xs)
+--    = Cons (f (g x)) (fmap f (fmap g xs) by the inductive hypothesis.
+-- fmap f (fmap g (Cons x xs)) = fmap f (Cons (g x) (fmap g xs))
+--    = Cons (f (g x)) (fmap f (fmap g xs)). QED.
+
 
 xs = 3 `Cons` (4 `Cons` (5 `Cons` Empty))
 xss = xs `Cons` Empty
