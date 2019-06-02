@@ -33,6 +33,6 @@ of a category is called a “functor.”
 	- ###### DEFINITION 9.3
 	>Let C and C′ be categories with objects A and A′ respectively. A functor* F : C → C′ is a pair of functions F1 and F2 such that F1 : A → A′ and for each ordered pair X, Y of objects of A,
 	
-				F2 : H(X, Y) -> H'(F1(X), F2(Y))
+				F2 : H(X, Y) -> H'(F1(X), F1(Y))
 				
 		> while preserving identities and compositions, that is, F2(1_X) = 1_F1(X) and F2(gf) = F2(g)F2(f) for all f in H(X, Y) and g in H(Y, Z). [My note: So the functor F is in fact two functions F1 and F2. Two are needed since a functor requires both a mapping on objects and a mapping of morphisms between objects. So when just one F is mentioned the F1 or F2 is given by context.]
