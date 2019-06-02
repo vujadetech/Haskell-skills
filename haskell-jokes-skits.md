@@ -5,6 +5,8 @@
 - Functions are first class citizens related jokes.
 	- First class functions are like the guy in the [_Grey Poupon_ commercial](https://www.youtube.com/watch?v=uwOCOm9Z0YE).
 	
+	
+	
 	> Pardon me, do you have any _Grey Poupon_?
 	
 	- Jerry Seinfeld
