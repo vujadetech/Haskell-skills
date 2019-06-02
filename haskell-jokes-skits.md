@@ -1,10 +1,10 @@
 # Some haskell jokes and skits for ya.
 
-- #####Parody of [Jim Croce's Operator](https://www.youtube.com/watch?v=3RA4MykPm4s): "Haskell operators (that's not what 'return' does)."
+- ##### Parody of [Jim Croce's Operator](https://www.youtube.com/watch?v=3RA4MykPm4s): "Haskell operators (that's not what 'return' does)."
 > Haskell operator, help me make this function call.
 
 
-- #####Functions are first class citizens related jokes.
+- ##### Functions are first class citizens related jokes.
 	- First class functions are like the guy in the [_Grey Poupon_ commercial](https://www.youtube.com/watch?v=uwOCOm9Z0YE).
 	
 		> Pardon me, do you have any _Grey Poupon_?
