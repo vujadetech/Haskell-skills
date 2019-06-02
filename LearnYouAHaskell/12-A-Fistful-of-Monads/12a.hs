@@ -46,7 +46,7 @@ routine2 = do
     second <- landRight 2 first
     landLeft 1 second
 
---listOfTuples :: [(Int,Char)]
+listOfTuples :: [(Int,Char)]
 listOfTuples = do
     n <- [1,2]
     ch <- ['a','b']
