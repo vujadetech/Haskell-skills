@@ -28,10 +28,13 @@
 
 - Power sets: The power set functor P : Set → Set maps each set to its power set and each function f:X->Y to the map which sends each subset U of X to the subset f(U) of Y. So F1(X) = the power set of X. F2 depends on f since F2 sends f to the map which sends subsets of X to their images under f in Y.
 	- E.g., if X = Z_2 = {0,1} then F1(X) = P(X) = {{}, {0}, {1}, X}. Suppose f(0) = {} and f(1) = {0,1} = X, to make f specific. Call it the "all or nothing" mapping, if you will. F2(f) is the function which sends any subset U of X to it's image f(U), which in this case means
-		- {} -> f({}) = {}, where the -> refers to the mapping under F2(f).
+		- {} -> f({}) = {}, where the -> refers to the mapping under F2(f), so this could also be written as (F2(f))({})= {}.
 		- {0} -> f({0}) = {f(0)} = {{}}.
 		- {1} -> f({1}) = {f(1)} = {X}.
 		- {0,1} -> f({0,1}) -> {f(0), f(1)} = {{}, X}.
+
+
+<math>\int_0^\pi \sin x\,dx.</math>
 
 ##### Jokes
 
