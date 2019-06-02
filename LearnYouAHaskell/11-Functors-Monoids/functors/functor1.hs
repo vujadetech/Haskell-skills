@@ -16,7 +16,7 @@ instance Functor List where
 -- 1) fmap (f . g) Empty = f (g Empty) = f Empty = Empty and also
 --    fmap f (fmap g Empty) = fmap f Empty = Empty.
 -- 2) Induction can be used for the composition.
--- (Empty is the base case that was initially proven.) Suppose
+-- (Empty is the base case that was just proven.) Suppose
 -- fmap (f . g) xs = fmap f (fmap g xs) as the inductive hypothesis.
 -- fmap (f . g) (Cons x xs) = Cons ((f . g) x) (fmap (f . g) xs)
 --    = Cons (f (g x)) (fmap f (fmap g xs)) by the inductive hypothesis.
