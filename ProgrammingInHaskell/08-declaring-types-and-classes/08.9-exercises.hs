@@ -98,4 +98,16 @@ folde f g (Add e1 e2) =
       folde2 = folde f g e2
   in (g folde1 folde2)
 
-  
+-- Ex 6
+size :: Expr -> Int
+size (Val _)      = 1
+size (Add e1 e2)  = size e1 + size e2
+
+x1 = (Val 42)
+x2 = (Val 7)
+x3 = (Val 3)
+e4 = (Add x1 x2)
+
+-- eval for ex 6 since eval in namespace above
+eval6 :: Expr -> Int
+eval6 = folde id (+)
