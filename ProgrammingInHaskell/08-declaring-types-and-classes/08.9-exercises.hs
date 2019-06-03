@@ -1,5 +1,5 @@
 
-data Expr = Val Int | Add Expr Expr
+data Expr = Val Int | Add Expr Expr deriving (Show)
 
 value :: Expr -> Int
 --value (Val n) = n
@@ -89,6 +89,13 @@ balance2 xs = make_tree xs
 tenBalancedTrees = map balance2 (make_prefixes 10)
 bals = map balanced tenBalancedTrees
 
---
+-- Ex 5.
 --data Expr = Val Int | Add Expr Expr
---folde :: (Int -> a) -> (a -> a -> a) -> Expr -> a
+folde :: (Int -> a) -> (a -> a -> a) -> Expr -> a
+folde f g (Val x) = (f x)
+folde f g (Add e1 e2) =
+  let folde1 = folde f g e1
+      folde2 = folde f g e2
+  in (g folde1 folde2)
+
+  
