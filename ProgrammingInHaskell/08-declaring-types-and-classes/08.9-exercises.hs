@@ -41,10 +41,11 @@ balanced (Node l x r)
   | (abs $ (num_leaves l) - (num_leaves r)) > 1 = False
   | otherwise = (balanced l) && (balanced r)
 
-split_list_in_half xs =
-  let n = length xs
+-- split_list_in_half assumes a list with at least 2 elements
+split_list_in_half list@(x0:x1:xs) =
+  let n = length list
       k = (quot n 2)
-  in [(take k xs), (drop k xs)]
+  in [(take k list), (drop k list)]
 
 -- split into parts that are all length <= k
 split_list xs k =
@@ -53,12 +54,41 @@ split_list xs k =
       split_rest = if (length rest < k) then [rest] else split_list rest k
   in front : split_rest
 
+xs = [1..5]
+split = split_list xs 3
+t0 = balance $ split !! 0
+t1 = balance $ split !! 1
+balSplit = map balance split
+
 -- 4. balance : (x:xs) -> balanced Tree
+
+make_prefixes x = map (\n -> [1..n]) [1..x]
+
 balance [] = NullT
-balance (x1:xs)
+balance list@(x1:xs)
   | (xs == [])        = Leaf x1
   | (xs == [x2])      = Node NullT x1 (Leaf x2)
   | (xs == [x2, x3])  = Node (Leaf x1) x2 (Leaf x3)
-  | otherwise         = Leaf 42
+  | otherwise         = NullT
   where x2 = xs !! 0
         x3 = xs !! 1
+
+-- make_tree xs
+make_tree []        = NullT
+make_tree xs
+  | (xs == [])      = NullT
+  | (xs == [x0])    = Leaf x0
+  | (xs == [x0,x1]) = Node (Leaf x0) x1 NullT
+  | otherwise       = Node (make_tree l) x0 (make_tree r)
+  where [ x0, x1 ] = [ xs !! 0, xs !! 1 ]
+        split      = split_list_in_half $ tail xs
+        [ l, r ]   = [ split !! 0, split !! 1 ]
+
+balance2 xs = make_tree xs
+
+tenBalancedTrees = map balance2 (make_prefixes 10)
+bals = map balanced tenBalancedTrees
+
+--
+--data Expr = Val Int | Add Expr Expr
+--folde :: (Int -> a) -> (a -> a -> a) -> Expr -> a
