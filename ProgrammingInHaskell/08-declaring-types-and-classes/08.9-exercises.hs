@@ -1,20 +1,37 @@
+data Expr = Val Int | Add Expr Expr | Mult Expr Expr deriving (Show)
 
-data Expr = Val Int | Add Expr Expr deriving (Show)
-
-value :: Expr -> Int
---value (Val n) = n
+-- This value is only used for demo purposes before moving on to the abstract machine.
+--value :: Expr -> Int
+--value e = eval e []
 --value (Add x y) = value x + value y
-value e = eval e []
 
-type Cont = [Op]
-data Op = EVAL Expr | ADD Int --deriving (Show)
+-- value for machine
+value :: Expr -> Int
+value e = eval e [] -- [EVAL (Val 42)]
+-- value calls eval, which then starts the mutual recursion between eval and exec.
+-- Reminds me of the SICP eval/apply meta-circular evaluator.
 
-eval (Val n)   c = exec c n
-eval (Add x y) c = eval x (EVAL y : c)
+type Cont = [Op] -- CONTrol stack, e.g., [Val 1, Add (Val 1) (Val 2)]
+data Op = EVAL_MULT Expr | EVAL_ADD Expr | ADD Int | MULT Int --deriving (Show)
 
+eval :: Expr -> Cont -> Int
+-- e.g., eval (Add (Val 1) (Val 2)) [] => 3
+eval (Val n)   c  = exec c n
+eval (Add x y) c  = eval x (EVAL_ADD y : c)
+eval (Mult x y) c = eval x (EVAL_MULT y : c)
+
+exec :: Cont -> Int -> Int
+-- e.g., exec (ADD 2 : []) 3 => 5
+-- e.g., exec (MULT 2 : []) 3 => 6
 exec []           n = n
-exec (EVAL y : c) n = eval y (ADD n : c)
+exec (EVAL_ADD y : c) n = eval y (ADD n : c)
+exec (EVAL_MULT y : c) n = eval y (MULT n : c)
 exec (ADD  n : c) m = exec c (n + m)
+exec (MULT n : c) m = exec c (n * m)
+
+-- Let's get  some machine results
+v1 = (Val 42)
+v2 = (Val 7)
 
 -- 3, balanced
 
@@ -61,6 +78,10 @@ t1 = balance $ split !! 1
 balSplit = map balance split
 
 -- 4. balance : (x:xs) -> balanced Tree
+-- Mine is longer b/c I accidentally used a different datatype, lol.
+-- It's supposed to use
+-- data Tree a = Leaf a | Node (Tree a) (Tree a)
+-- which would have been a bit simpler, so I just need to learn how to read. :D
 
 make_prefixes x = map (\n -> [1..n]) [1..x]
 
@@ -111,3 +132,17 @@ e4 = (Add x1 x2)
 -- eval for ex 6 since eval in namespace above
 eval6 :: Expr -> Int
 eval6 = folde id (+)
+
+-- Ex 9 abstract machine mult
+{-
+data Expr = Val Int | Add Expr Expr | Mult Expr Expr deriving (Show)
+data Op = EVAL Expr | ADD Int        --deriving (Show)
+
+eval (Val n)   c = exec c n
+eval (Add x y) c = eval x (EVAL y : c)
+
+exec []           n = n
+exec (EVAL y : c) n = eval y (ADD n : c)
+exec (ADD  n : c) m = exec c (n + m)
+-}
+--eval (Mult)
