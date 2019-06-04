@@ -1,6 +1,6 @@
-### Mo' Monads: the interwebs' very best monad stuff
+### Mo' Monads: the interwebs' very best monad stuff [in progress]
 
-- The best meta-monad tutorial, besides this one, obviously :D is John D. Cook's [Monad's are hard because...](https://www.johndcook.com/blog/2014/03/03/monads-are-hard-because/). In fact, it's what inspired me to post this list. Some of the links are redundant here, but that's not a bad thing given the noise/signal ratio for this topic. If you only read one monad tutorial in your life, let it be the first entry in our meta-monad tutorial, Philip...
+- The best meta-monad tutorial, besides this one, obviously :D, is John D. Cook's [Monad's are hard because...](https://www.johndcook.com/blog/2014/03/03/monads-are-hard-because/). In fact, it's what inspired me to post this list. Some of the links are redundant here, but that's not a bad thing given the noise/signal ratio for this topic. If you only read one monad tutorial in your life, let it be the first entry in our meta-monad tutorial, Philip...
 
 - Wadler's [Monads for functional programming](http://homepages.inf.ed.ac.uk/wadler/papers/marktoberdorf/baastad.pdf)
 - Monads made difficult
