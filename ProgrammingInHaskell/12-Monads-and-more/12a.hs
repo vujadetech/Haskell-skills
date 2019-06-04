@@ -58,3 +58,20 @@ eval2 (Div x y) = case eval2 x of
   Just n  -> case eval2 y of
     Nothing -> Nothing
     Just m -> safediv n m
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- Generic functions
