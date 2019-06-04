@@ -14,7 +14,9 @@
 		> You got a function, you got an input, just apply the function to the input. Why do you have to pass the function as an input and get another function as the return value? I mean, come on! [Who are the ad wizards who came up with this one?](https://www.youtube.com/watch?v=A_pvFXbVlt8)
 	
 	
-- Desugar haskell, oooh, dehoney dehoney (tune of the archies)
+- ##### Desugar haskell, oooh, dehoney dehoney (tune of the archies)
+
+- ##### Although [monads are like burritos](https://blog.plover.com/prog/burritos.html), they have much more in common with year-round McRib sandwiches. Now there is an obvious side effect to eating too many McRib sandwiches, namely, becoming morbidly obese [fat twins on a motorcycle]
 
 - ##### next
 
