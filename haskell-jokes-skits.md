@@ -16,7 +16,7 @@
 	
 - ##### Desugar haskell, oooh, dehoney dehoney (tune of the archies)
 
-- ##### Although [monads are like burritos](https://blog.plover.com/prog/burritos.html), they have much more in common with year-round McRib sandwiches. Now there is an obvious side effect to eating too many McRib sandwiches, namely, becoming morbidly obese [fat twins on a motorcycle]
+- ##### Although [monads are like burritos](https://blog.plover.com/prog/burritos.html), they have much more in common with year-round McRib sandwiches. Now there is an obvious side effect to eating too many McRib sandwiches, namely, becoming [morbidly obese](http://thatblueyak.blogspot.com/2009/06/fattest-twins-mcguire-twins-motorcycles.html).
 
 - ##### next
 

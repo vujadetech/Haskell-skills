@@ -18,3 +18,10 @@ t2 = NodeD LeafD 42 LeafD
 instance Functor TreeD where
   fmap g LeafD          = LeafD
   fmap g (NodeD l x r)  = NodeD (fmap g l) (g x) (fmap g r)
+
+-- Ex 2
+
+-- fmap :: Functor f => (a -> b) -> f a -> f b
+
+--instance Functor ((->) a) where
+--  fmap = (.)
