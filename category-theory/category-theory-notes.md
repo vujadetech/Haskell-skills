@@ -13,7 +13,7 @@
 
 
 
-- #####Powerset (from wikipedia)
+- ##### Powerset (from wikipedia)
 	Example: the powerset functor is also a monad
 The power set functor {\displaystyle P:\mathbf {Set} \to \mathbf {Set} } P:{\mathbf  {Set}}\to {\mathbf  {Set}} described above forms a monad. For any set S you have a {\displaystyle \operatorname {unit} _{S}(x)=\{x\}} {\displaystyle \operatorname {unit} _{S}(x)=\{x\}}, mapping elements to their singleton set. Note that each of these singleton sets are trivially a subset of S, so {\displaystyle \operatorname {unit} _{S}} {\displaystyle \operatorname {unit} _{S}} returns elements of the powerset of S, as is required. Also, you can define a function {\displaystyle \operatorname {join} _{S}} {\displaystyle \operatorname {join} _{S}} as follows: we receive an input {\displaystyle L\in {\mathcal {P}}({\mathcal {P}}(S))} L\in {\mathcal  {P}}({\mathcal  {P}}(S)). This is:
 	- A member of the powerset of the powerset of S.
@@ -58,8 +58,5 @@ of a category is called a “functor.”
 
 - Subset example (3.2, ~7:00): Order but not total order, since d could be a sub of both b and c which are themselves subset of a, but b != c.
 
-- Logging composition example (3.2, 25:00): Latter portion of lecture does a deep dive into logging functionality that's requested after other modules are already written in C++. He calls it embellished composition specifically since the functions are working on pairs (a, string).
+- Logging composition example (3.2, 25:00): Latter portion of lecture does a deep dive into logging functionality that's requested after other modules are already written in C++. He calls it embellished composition specifically since the functions are working on pairs <a, string>.
 
-\<a, string>
-
-\<a, string\> 
