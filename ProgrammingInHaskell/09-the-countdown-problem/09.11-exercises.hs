@@ -142,7 +142,7 @@ subsetQ _  [] = False
 subsetQ []  _ = True
 subsetQ (x:xs) ys
   | (elementOfQ x ys) = True
-  | otherwise       = False
+  | otherwise         = False
 
 isChoice :: (Eq a) => [a] -> [a] -> Bool
 isChoice = subsetQ
