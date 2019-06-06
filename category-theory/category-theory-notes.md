@@ -55,3 +55,11 @@ of a category is called a “functor.”
 - Hom-set (3.1, 22:30), hom-set : C(a, b) (or C(a, a)) is a set of arrows from a to b (or a in the second case). In a thin category, every hom-set is either the empty set, or a singleton set.
 
 - Monoid (3.1, 33:00) NB A given object m will have an id\_m : m -> m by necessity, but could have 1 or more other arrows m -> m which are not id\_m. 
+
+- Subset example (3.2, ~7:00): Order but not total order, since d could be a sub of both b and c which are themselves subset of a, but b != c.
+
+- Logging composition example (3.2, 25:00): Latter portion of lecture does a deep dive into logging functionality that's requested after other modules are already written in C++. He calls it embellished composition specifically since the functions are working on pairs (a, string).
+
+\<a, string>
+
+\<a, string\> 
