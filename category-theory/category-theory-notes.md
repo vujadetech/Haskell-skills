@@ -36,3 +36,22 @@ of a category is called a “functor.”
 				F2 : H(X, Y) -> H'(F1(X), F1(Y))
 				
 		> while preserving identities and compositions, that is, F2(1_X) = 1_F1(X) and F2(gf) = F2(g)F2(f) for all f in H(X, Y) and g in H(Y, Z). [My note: So the functor F is in fact two functions F1 and F2. Two are needed since a functor requires both a mapping on objects and a mapping of morphisms between objects. So when just one F is mentioned the F1 or F2 is given by context.]
+
+#### From Milewski's YT category theory playlist
+- A function is _pure_ if it can be memoized (~5:00 of 2.1).
+
+- Surjective/onto = epimorsphism/epic, monomorphic/into = monomorphism/monic, but more general since in Cat theory the objects aren't necessarily sets. Formal defn at 44:30 (and repeated at start of 2.2 vid): Spse f is an arrow from object a to object b. If for all objects c and all morphisms g1, g2, (g1 . f) = (g2 . f) => g1 = g2, then f is an epimorphism. When C = Set, this reduces to f being a surjective function. Hint for remembering: it permits left cancellation. 
+
+- Monomorphism/monic (3:50 of 2.2): Let f be an arrow from object a to object b. If for all objects c and all arrows g1, g2 from c to a, (f . g1) = (f . g2) => g1 = g2, then f is monomorphism. It permits right cancellation.
+
+- The type (in Haskell, presumably) of the empty set (~9:00 of 2.2) is Void.
+
+- Void = False in logic. (13:10 of 2.2)
+
+- Unit, () :: ()  (~15:00). () = True in logic.
+
+- Thin category (3.1, ~20:55): A thin category corresponds to a preorder.
+
+- Hom-set (3.1, 22:30), hom-set : C(a, b) (or C(a, a)) is a set of arrows from a to b (or a in the second case). In a thin category, every hom-set is either the empty set, or a singleton set.
+
+- Monoid (3.1, 33:00) NB A given object m will have an id\_m : m -> m by necessity, but could have 1 or more other arrows m -> m which are not id\_m. 
