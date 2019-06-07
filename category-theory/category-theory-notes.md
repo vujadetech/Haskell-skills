@@ -60,3 +60,8 @@ of a category is called a “functor.”
 
 - Logging composition example (3.2, 25:00): Latter portion of lecture does a deep dive into logging functionality that's requested after other modules are already written in C++. He calls it embellished composition specifically since the functions are working on pairs <a, string>.
 
+- Universal construction (4.1, 14:00, example starts at 18:20) with singleton set. For all a, exists f :: a -> () and for all f :: a -> (), g :: a -> () => f = g. Counterexample for terminal object: Nat, since that would imply a largest Nat. When terminal object exists, it is the largest object. So apparently () is larger than all other values in Haskell?
+
+- Empty set (4.1, 29:00) is initial object.
+
+- Terminal object is unique up to isomorphism (4.1, 38:00). 
