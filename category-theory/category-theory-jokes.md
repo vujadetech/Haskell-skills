@@ -4,4 +4,4 @@
 
 - Funk doors for functional programming
 
-- _Func_ in the __thunk__!!! (Or is it _thunk_ in the __func__?)
+- _Func_ in the __thunk__! (Or is it _thunk_ in the __func__?)
