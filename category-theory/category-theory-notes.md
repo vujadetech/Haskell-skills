@@ -65,3 +65,31 @@ of a category is called a “functor.”
 - Empty set (4.1, 29:00) is initial object.
 
 - Terminal object is unique up to isomorphism (4.1, 38:00). 
+
+##### 4.2 Products 
+https://bartoszmilewski.com/2015/01/07/products-and-coproducts/
+
+~13:00 of vid but using haskell code from blog, fst and snd
+
+p :: c -> a
+q :: c -> b
+
+29:30, Categorical product, for 
+p  ::  c -> a, q  :: c -> b and
+p' :: c' -> a, q' :: c' -> b there is a unique morphism
+m :: c' -> c, p' = p . m, q' = q . m
+
+c with p and q is the _product_ of a and b.
+
+##### 5.2 Algebraic Data Types
+
+(halfway through 5.2) Void is 0 for sum types:
+
+Either a Void ~ a <=> a + 0 = a since there is no element of Void to take the right spot, so only constructor is Left a. 
+
+a x 0 = 0 since (a, Void) ~ Void, b/c there is no Void available to make the pair, so it's never made, it always Void.
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																					
+22:00, 2 = 1 + 1 has two units on the right in a disjoint sum, so say ( (), alpha) and ( (), beta), which are different so two in all. But that's isomorphic to Bool by setting, say, f(True) = ( (), alpha) and f(False) = ( (), beta).
+
+Also 1 + a is Maybe since it's either a Just x for some x of type a, or it's Nothing which is a unit type (), or at least isomorphic to it.
+
