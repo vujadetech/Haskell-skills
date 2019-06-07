@@ -128,3 +128,8 @@ pack xs = first : pack rest
 
 pack1 = pack cs8
 pack2 = pack [1,1,2,3,3,3,3,3,1]
+
+-- Problem 10
+c10s = "aaaabccaadeeee"
+
+encode xs = map (\ys -> (length ys, head ys)) $ pack xs
