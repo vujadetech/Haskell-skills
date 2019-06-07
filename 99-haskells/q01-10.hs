@@ -1,4 +1,5 @@
 --q01_10 = putStrLn "Loading q01-10.hs"
+import Data.List
 
 xs = [1,2,3,4]      -- nums for testing
 cs = ['x','y','z']  -- chars for testing
@@ -85,6 +86,8 @@ flatten (Elem x) = [x]
 flatten (List [ Elem x ]) = [x]
 
 -- Problem 08, compress
+cs8 = "aaaabccaadeeee"
+
 compress :: (Eq a) => [a] -> [a]
 compress [] = []
 compress [x] = [x]
@@ -95,3 +98,33 @@ compress (x0:x1:xs)
 
 --compress2 :: (Eq a) => [a] -> [a]
 compress2 xs = foldl1 (\x y -> if ([last x] == y) then x else x ++ y) $ map (\x -> [x]) xs
+
+compress3 :: (Eq a) => [a] -> [a]
+compress3 = (map head) . pack
+
+-- Problem 09,
+
+
+--pack [ ] = []
+--pack [x] = [x]
+{-
+pack (x1:x2:xs) = []
+  | takeWhile (hd == c)
+  | otherwise
+  where
+    compressed = compress xs
+    c  = head compressed
+    hd = head xs
+    -}
+
+
+pack :: Eq a => [a] -> [ [a] ]
+pack [] = []
+pack xs = first : pack rest
+  where
+    first = takeWhile (== head xs) xs
+    rest  = dropWhile (== head xs) xs
+
+
+pack1 = pack cs8
+pack2 = pack [1,1,2,3,3,3,3,3,1]
