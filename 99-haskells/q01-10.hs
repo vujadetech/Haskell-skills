@@ -239,7 +239,15 @@ rndSelectAcc xs n acc = do
   (y, ys) <- randomPick'' xs
   rndSelectAcc ys (n-1) (y:acc)
 
+rnd_select xs n = rndSelectAcc xs n []
 
+-- p24
+diff_select k n = rnd_select [1..n] k
+
+-- p25
+rnd_permu xs = rnd_select xs (length xs)
+
+-- p26
 
 {-
 rndSelectAcc xs 0 acc = return acc
