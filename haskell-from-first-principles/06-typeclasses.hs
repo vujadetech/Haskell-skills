@@ -9,6 +9,9 @@ instance Eq Trivial where
 x = Trivial'
 y = Trivial'
 
+data Car = AGreatSteeringWheelThatWont__Whiff__OutTheWindowWhileIDriving
+
+
 data List a = Nil | Cons a (List a)
 
 -- Exercises: Eq
@@ -26,4 +29,6 @@ ti = Two 4 2
 --sois = "forty two"
 
 data StringOrInt2 = TisAnInteger | TisAString String -- first case inherited
-[soii, sois] = [ TisAn 42, TisAString "forty two" ]
+--[soii, sois] = [ TisAn 42, TisAString "forty two" ]
+soii =  TisAn 42
+sois =  TisAString "forty two" 

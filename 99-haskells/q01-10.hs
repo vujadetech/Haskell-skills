@@ -269,7 +269,6 @@ combos' k (x:xs) = x_combos ++ rest_combos
 --  | (k == 1) = map (:[]) xs
 --  | otherwise = (combos 1 xs)
 
-
 {-
 rndSelectAcc xs 0 acc = return acc
 rndSelectAcc xs n acc = do
