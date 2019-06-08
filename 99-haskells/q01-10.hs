@@ -1,5 +1,6 @@
 --q01_10 = putStrLn "Loading q01-10.hs"
 import Data.List
+import System.Random hiding (split)
 
 xs = [1,2,3,4]      -- nums for testing
 cs = ['x','y','z']  -- chars for testing
@@ -192,7 +193,76 @@ removeAt n xs = (x, first ++ (tail rest))
     x = head rest
 
 -- Problem 21
-
 insertAt x xs n = first ++ [x] ++ rest
   where
     (first, rest) = split xs (n-1)
+
+-- p22
+range a b
+  | (a > b) = []
+  | otherwise = a : range (a+1) b
+
+-- p23
+rollDie x = getStdRandom (randomR (1, x))
+
+randomPick' xs = do
+  k <- rollDie (length xs)
+  return (xs !! (k-1))
+
+randomPick xs =
+  rollDie (length xs) >>=
+    (\k -> return (xs !! (k-1)))
+
+randomPick'' :: [a] -> IO (a, [a])
+randomPick'' xs =
+  rollDie (length xs) >>=
+    (\k -> do
+      let i = k-1
+      return (xs !! i, snd $ removeAt k xs))
+
+rndSelect xs n = do
+  p <- randomPick'' xs
+  let ys = (snd p)
+  if (n == 1) then return ys
+  else return ys
+
+rndSelect' xs n acc
+  | (n == 0) = return acc
+  | (n == 1) = do
+      ys <- randomPick'' xs
+      return $ snd ys
+  | otherwise = return []
+
+rndSelectAcc :: (Eq t, Num t) => [a] -> t -> [a] -> IO [a]
+rndSelectAcc xs 0 acc = return acc
+rndSelectAcc xs n acc = do
+  (y, ys) <- randomPick'' xs
+  rndSelectAcc ys (n-1) (y:acc)
+
+
+
+{-
+rndSelectAcc xs 0 acc = return acc
+rndSelectAcc xs n acc = do
+  p <- randomPick'' xs
+  y  <- fst p
+  ys <- snd p
+  zs <- rndSelectAcc ys (n-1) (y:acc)
+  return zs
+
+-}
+{-
+rndSelect xs n
+  | (n == 1) = randomPick xs >>= (\x -> return [x])
+  | otherwise = do
+      y <- randomPick xs
+      ys <- rndSelect xs (n-1)
+      return $ [y] ++ ys
+
+rndSelect' xs n = do
+  x <- randomPick xs
+  if (n == 1) then
+    return [x]
+  else
+    return $ [x] ++ xs
+-}
