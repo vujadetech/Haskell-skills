@@ -125,11 +125,19 @@ pack xs = first : pack rest
     first = takeWhile (== head xs) xs
     rest  = dropWhile (== head xs) xs
 
-
 pack1 = pack cs8
 pack2 = pack [1,1,2,3,3,3,3,3,1]
 
 -- Problem 10
 c10s = "aaaabccaadeeee"
 
-encode xs = map (\ys -> (length ys, head ys)) $ pack xs
+encode :: (Eq a) => [a] -> [ (Int, a) ]
+encode = map (\ys -> (length ys, head ys)) . pack
+es10 = encode cs8
+
+-- Problem 11
+-- This one is annoying in Haskell b/c of its type system, so skipping it. Judge me if you must. :D
+
+-- Problem 12
+
+decode ps = concat $ map (\p -> (replicate (fst p) (snd p))) ps
