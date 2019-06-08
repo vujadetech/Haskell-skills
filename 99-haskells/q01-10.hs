@@ -151,10 +151,16 @@ edAcc (x:xs) ( (n, y) : ps )
   | (x == y)  = edAcc xs ((n+1, y) : ps)
   | otherwise = (n, y) : edAcc xs ( (1, x) : ps )
 
---encodeDirect :: (Eq a) => [a] ->  [ (Integer, a) ]
+encodeDirect :: (Eq a) => [a] -> [ (Int, a) ]
+encodeDirect = (flip edAcc) []
 
-encodeDirect xs = edAcc xs []
 
 -- Problem 14
-
 dupli xs = concatMap (\x -> x:x:[]) xs
+
+-- Problem 15
+repli xs n = concatMap (replicate n) xs
+
+-- point-free
+repli' :: Foldable t => t b -> Int -> [b]
+repli' = flip $ concatMap . replicate
