@@ -147,10 +147,14 @@ decode ps = concat $ map (\p -> (replicate (fst p) (snd p))) ps
 edAcc :: (Eq a) => [a] -> [(Int, a)] -> [(Int, a)]
 edAcc [] acc = acc
 edAcc (x:xs) []  = edAcc xs [ (1, x) ]
-edAcc (x:xs) ( (n, y):ps )
+edAcc (x:xs) ( (n, y) : ps )
   | (x == y)  = edAcc xs ((n+1, y) : ps)
-  | otherwise = edAcc xs ( (1,x) : ps) ++ [(n,y)] --edAdd ()
+  | otherwise = (n, y) : edAcc xs ( (1, x) : ps )
 
 --encodeDirect :: (Eq a) => [a] ->  [ (Integer, a) ]
---encodeDirect [x] = [ (1, x) ]
-encodeDirect xs = reverse $ edAcc xs []
+
+encodeDirect xs = edAcc xs []
+
+-- Problem 14
+
+dupli xs = concatMap (\x -> x:x:[]) xs
