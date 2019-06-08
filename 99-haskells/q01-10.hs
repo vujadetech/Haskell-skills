@@ -249,6 +249,27 @@ rnd_permu xs = rnd_select xs (length xs)
 
 -- p26
 
+--combos 1 xs = map (:[]) xs
+combos k xs = ps
+  where
+    len = length xs
+    xss = replicate len xs
+    ps  = zipWith removeAt [1..len] xss
+
+combos' 0  _     = [[]]
+combos' _  []    = [[]]
+combos' 1 (x:xs)    = map (:[]) (x:xs)
+combos' k (x:xs) = x_combos ++ rest_combos
+  where
+    x_combos = map (x:) (combos' (k-1) xs)
+    rest_combos = combos' k xs
+
+--combos :: Int -> [a] -> [[a]]
+--combos k xs
+--  | (k == 1) = map (:[]) xs
+--  | otherwise = (combos 1 xs)
+
+
 {-
 rndSelectAcc xs 0 acc = return acc
 rndSelectAcc xs n acc = do
