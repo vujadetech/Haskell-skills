@@ -181,6 +181,18 @@ slice xs i k = (take len) . (drop (i-1)) $ xs
 
 -- Problem 19
 rotate xs n = rest ++ first
-  where 
+  where
     k = (mod n (length xs))
     (first, rest) = split xs k
+
+-- Problem 20
+removeAt n xs = (x, first ++ (tail rest))
+  where
+    (first, rest) = split xs (n-1)
+    x = head rest
+
+-- Problem 21
+
+insertAt x xs n = first ++ [x] ++ rest
+  where
+    (first, rest) = split xs (n-1)
