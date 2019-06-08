@@ -164,3 +164,13 @@ repli xs n = concatMap (replicate n) xs
 -- point-free
 repli' :: Foldable t => t b -> Int -> [b]
 repli' = flip $ concatMap . replicate
+
+-- Problem 16
+split_every xs n
+  | (n >= length xs) = [ xs ]
+  | otherwise = (take n xs) : split_every (drop n xs) n
+
+dropEvery xs n = concat $  (take (n-1) xs) : (map tail (split_every (drop (n-1) xs) n))
+
+-- Problem 17
+split xs n = (take n xs, drop n xs)
