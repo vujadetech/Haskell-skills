@@ -117,7 +117,6 @@ pack (x1:x2:xs) = []
     hd = head xs
     -}
 
-
 pack :: Eq a => [a] -> [ [a] ]
 pack [] = []
 pack xs = first : pack rest
@@ -141,3 +140,17 @@ es10 = encode cs8
 -- Problem 12
 
 decode ps = concat $ map (\p -> (replicate (fst p) (snd p))) ps
+
+-- Problem 13
+
+-- encodeDirectAccumulator
+edAcc :: (Eq a) => [a] -> [(Int, a)] -> [(Int, a)]
+edAcc [] acc = acc
+edAcc (x:xs) []  = edAcc xs [ (1, x) ]
+edAcc (x:xs) ( (n, y):ps )
+  | (x == y)  = edAcc xs ((n+1, y) : ps)
+  | otherwise = edAcc xs ( (1,x) : ps) ++ [(n,y)] --edAdd ()
+
+--encodeDirect :: (Eq a) => [a] ->  [ (Integer, a) ]
+--encodeDirect [x] = [ (1, x) ]
+encodeDirect xs = reverse $ edAcc xs []
