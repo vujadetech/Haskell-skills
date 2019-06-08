@@ -174,3 +174,13 @@ dropEvery xs n = concat $  (take (n-1) xs) : (map tail (split_every (drop (n-1) 
 
 -- Problem 17
 split xs n = (take n xs, drop n xs)
+
+-- Problem 18
+slice xs i k = (take len) . (drop (i-1)) $ xs
+  where len = (k - i + 1)
+
+-- Problem 19
+rotate xs n = rest ++ first
+  where 
+    k = (mod n (length xs))
+    (first, rest) = split xs k
