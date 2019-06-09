@@ -336,6 +336,67 @@ lsortq (x:xs) =
       long  = lsortq [ l | l <- xs, not $ l `shorterThan` x ]
   in short ++ [x] ++ long
 
+-- p28
+
+lfs = ["abc", "de", "fgh", "de", "ijkl", "mn", "o"]
+
+freq x xs = length $ filter (x ==) xs
+
+-- freq_len xs xss = freq of lists with same length as xs in xss
+-- freq_len xs []  = 0
+
+-- how often do xs in xss have len = n
+freq_len n xss = length $ filter ((n ==) . length) xss
+
+-- ys in xss which have same length as xs
+same_len xs xss =
+  let len = length xs
+  in filter (\ys -> len == length ys) xss
+
+-- len_less_freq xs ys zss
+
+-- ys in xss with lengths less frequent than xs
+less_freq_len xs xss =
+  let len_xs = length xs
+      lens = map length xss
+      len_freq_xs = length $ filter ((== len_xs) . length) xss
+      less_freq_lens = [ ys | ys <- xss, len <- lens ]
+  in [] -- filter True [xs]-- (\ys -> )   -- filter (\ys -> len )
+
+-- True iff len(xs) less frequent than len(ys) in zss
+len_less_freqQ xs ys zss =
+  let [len_xs, len_ys] = [length xs, length ys]
+  in freq_len len_xs zss < freq_len len_ys zss
+
+len_comp_freqQ xs ys zss p =
+  let [len_xs, len_ys] = [length xs, length ys]
+  in p (freq_len len_xs zss) (freq_len len_ys zss)
+
+len_less_freq xs xss = [ ys | ys <- xss, len_less_freqQ ys xs xss ]
+-- len_more_freq xs xss =
+
+lfsortq [] = []
+lfsortq all@(x:xs) =
+  let less_fq = lfsortq [ lf | lf <- xs, len_comp_freqQ lf x all (<) ] --len_less_freqQ lf x xs ] -- lf `less_freq_len` x ]
+      same_fq = [ sf | sf <- xs, len_comp_freqQ sf x all (==) ] --sf <- same_len x xs ]
+      more_fq = lfsortq [ mf | mf <- xs, len_comp_freqQ mf x all (>) ]
+      -- long  = lfsortq [ mf | mf <- (all \\ short) \\ same ] --  lfsortq [ mf | mf <- xs, not $ len_less_freqQ mf x xs ]
+  in less_fq ++ same_fq ++ more_fq
+
+lfsortq' [] = []
+lfsortq' all@(x:xs) =
+  let less_fq = lfsortq [ lf | lf <- all, len_comp_freqQ lf x all (<) ] --len_less_freqQ lf x xs ] -- lf `less_freq_len` x ]
+      same_fq = lfsortq [ sf | sf <- all, len_comp_freqQ sf x all (==) ] --sf <- same_len x xs ]
+      more_fq = lfsortq [ mf | mf <- all, len_comp_freqQ mf x all (>) ]
+      -- long  = lfsortq [ mf | mf <- (all \\ short) \\ same ] --  lfsortq [ mf | mf <- xs, not $ len_less_freqQ mf x xs ]
+  in less_fq ++ same_fq ++ more_fq
+
+
+-- quicksort with comparator
+lsortq_comp [] _     = []
+lsortq_comp (x:xs) _ = []
+
+
 {-
 groups xs [k] = group_last [xs] k
 groups xs (k1:k2:ks)
