@@ -292,11 +292,15 @@ index' (x:xs) p
   | otherwise = 1 + index' xs p
 
 lsort' [x]     = [x]
-lsort' (x:xs) = shortest : (lsort' rest)
+lsort' (x:xs) = (shortest : (lsort' rest))
   where
     min_len = min' (map length xs)
     loc = index' xs ((== min_len) . length)
     (shortest, rest) = removeAt_0based loc xs
+
+-- test:
+-- sorted = lsort' ["a","bc","d"]
+sorted = lsort' ["bc","d"]
 
 lsort xs = len_pairs
   where
@@ -304,6 +308,33 @@ lsort xs = len_pairs
     smallest = min' lens
     len_pairs = zip lens xs
 
+lsort'' []      = []
+lsort'' [x]     = [x]
+lsort'' (x:xs) =
+    let min_len = min' (map length xs)
+        loc = index' xs ((== min_len) . length)
+        (shortest, rest) = removeAt_0based loc xs
+    in (shortest : (lsort'' rest))
+
+
+-- Cons shortest list on acc
+lsortAcc []  acc = acc
+lsortAcc [x] acc = (x:acc)
+lsortAcc (x:xs) acc =
+  let min_len = min' (map length xs)
+      loc = index' xs ((== min_len) . length)
+      shortest = xs !! loc
+      pair = removeAt_0based loc xs
+      rest = snd pair
+  in lsortAcc rest (shortest:acc)
+
+shorterThan xs ys = length xs < length ys
+
+lsortq [] = []
+lsortq (x:xs) =
+  let short = lsortq [ s | s <- xs, s `shorterThan` x ]
+      long  = lsortq [ l | l <- xs, not $ l `shorterThan` x ]
+  in short ++ [x] ++ long
 
 {-
 groups xs [k] = group_last [xs] k

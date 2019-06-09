@@ -93,3 +93,11 @@ a x 0 = 0 since (a, Void) ~ Void, b/c there is no Void available to make the pai
 
 Also 1 + a is Maybe since it's either a Just x for some x of type a, or it's Nothing which is a unit type (), or at least isomorphic to it.
 
+#### End Milewski YT cat theory playlist
+
+#### Other
+
+- An arrow _f_ is _monic_ if it permits left cancellation when composed with other arrows. That is, if g and h are arrows s.t. (f . g = f . h => g = h), then f is monic. This is an appropriate generalization of 1-1 functions, or injective functions, in set theory.
+	- Proof: If f : X -> Y is monic, then f is 1-1. Suppose on the contrary that f is a monic arrow in the category Set, but f is not 1-1 when considered as an ordinary function in set theory. Since f isn't 1-1, there exists x and y for with f(x) = f(y), but x != y. Let g : Z -> X be the and h : Z -> X be arrows.
+
+
