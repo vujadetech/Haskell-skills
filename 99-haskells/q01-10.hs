@@ -248,8 +248,6 @@ diff_select k n = rnd_select [1..n] k
 rnd_permu xs = rnd_select xs (length xs)
 
 -- p26
-
---combos 1 xs = map (:[]) xs
 combos k xs = ps
   where
     len = length xs
@@ -263,6 +261,21 @@ combos' k (x:xs) = filter ((== k) . length) $ x_combos ++ rest_combos
   where
     x_combos = map (x:) (combos' (k-1) xs)
     rest_combos = combos' k xs
+
+-- p27
+
+people = ['a'..'i']
+
+-- group helper 1: all ways to split xs into a group of length k and then the rest
+groups_k_rest xs k = [ [x, y] | x <- subsequences xs, let y = xs \\ x, length x == k ]
+
+apply_to_last xs f = (init xs) ++ [(f . last) xs]
+
+group_last xs k = [ (init xs) ++ tl | tl <- (groups_k_rest (last xs) k) ]
+
+-- group_last xs k =
+
+-- groups xs ks
 
 --combos :: Int -> [a] -> [[a]]
 --combos k xs
