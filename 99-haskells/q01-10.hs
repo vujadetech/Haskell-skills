@@ -1,5 +1,5 @@
 --q01_10 = putStrLn "Loading q01-10.hs"
-import Data.List
+import Data.List hiding (group)
 import System.Random hiding (split)
 
 xs = [1,2,3,4]      -- nums for testing
@@ -192,6 +192,8 @@ removeAt n xs = (x, first ++ (tail rest))
     (first, rest) = split xs (n-1)
     x = head rest
 
+removeAt_0based n xs = removeAt (n+1) xs
+
 -- Problem 21
 insertAt x xs n = first ++ [x] ++ rest
   where
@@ -269,19 +271,39 @@ people = ['a'..'i']
 -- group helper 1: all ways to split xs into a group of length k and then the rest
 groups_k_rest xs k = [ [x, y] | x <- subsequences xs, let y = xs \\ x, length x == k ]
 
-apply_to_last xs f = (init xs) ++ [(f . last) xs]
+-- apply_to_last xs f = (init xs) ++ [(f . last) xs]
 
+group_last :: Eq a => [[a]] -> [Int] -> [[[a]]]
 group_last xs [k] = [ (init xs) ++ tl | tl <- (groups_k_rest (last xs) k) ]
 group_last xs (k1:ks) = concat $ map (\xs -> group_last xs [k1]) group_ks
   where group_ks = group_last xs ks
 
--- yss = map (\xs -> group_last xs 1) (group_last ["abcd"] 1)
--- yss = concat $ map (\xs -> group_last xs 1) (group_last ["abcd"] 1)
--- map (\xs -> group_last xs 1) $ group_last  ["abcd"] 1
+group :: Eq a => [Int] -> [[a]] -> [[[a]]]
+group = flip group_last
 
+-- p28
+xss = ["abc", "de", "fgh", "de", "o"]
 
+min' [x] = x
+min' (x:xs) = min x (min' xs)
 
--- group_last xs k =
+index' (x:xs) p
+  | p x = 0
+  | otherwise = 1 + index' xs p
+
+lsort' [x]     = [x]
+lsort' (x:xs) = shortest : (lsort' rest)
+  where
+    min_len = min' (map length xs)
+    loc = index' xs ((== min_len) . length)
+    (shortest, rest) = removeAt_0based loc xs
+
+lsort xs = len_pairs
+  where
+    lens = map length xs
+    smallest = min' lens
+    len_pairs = zip lens xs
+
 
 {-
 groups xs [k] = group_last [xs] k
