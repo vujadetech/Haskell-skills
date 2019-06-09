@@ -31,4 +31,4 @@ ti = Two 4 2
 data StringOrInt2 = TisAnInteger | TisAString String -- first case inherited
 --[soii, sois] = [ TisAn 42, TisAString "forty two" ]
 soii =  TisAn 42
-sois =  TisAString "forty two" 
+sois =  TisAString "forty two"
