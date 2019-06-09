@@ -396,6 +396,23 @@ lfsortq' all@(x:xs) =
 lsortq_comp [] _     = []
 lsortq_comp (x:xs) _ = []
 
+-- p29 and 30 were skipped on the list at wiki.Haskell
+
+-- p31
+dividesQ k n = n `mod` k == 0
+twoToSqrtN n = let sqrtN = (floor . sqrt) n in [2..sqrtN]
+
+isComposite :: (Integral t) => t -> Bool
+isComposite n = any (flip dividesQ n) (twoToSqrtN n)
+
+--isPrime :: (Num a) => a -> Bool
+--isPrime :: (Integral a, RealFrac a, Floating a) => a -> Bool
+--isPrime :: (Integral a) => a -> Bool
+--isPrime n =
+--  let sqrt_n = (ceiling (sqrt n))
+--  in (not $ any (flip dividesQ n) [2..sqrt_n])
+
+
 
 {-
 groups xs [k] = group_last [xs] k
