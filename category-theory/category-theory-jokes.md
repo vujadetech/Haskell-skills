@@ -17,6 +17,6 @@ The professor wasn't just doing [hand-waving](https://en.wikipedia.org/wiki/Hand
 _Really? What happened?_
 He was doing so much hand-waving while presenting his paper at a conference that he sprained both of his wrists. 
 
-- _[Shoot that monic arrow through my heeeeaaaaaarrt](https://www.youtube.com/watch?v=a70yJwgQtzo)_
+- _[Shoot that monic arrow through my caaaaategoryyyyyy](https://www.youtube.com/watch?v=a70yJwgQtzo)_
 
 - ccc is a Cartesian Closed Category, not to be confused with _[C+C Music Factory](https://www.youtube.com/watch?v=LaTGrV58wec)_.
