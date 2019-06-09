@@ -399,11 +399,26 @@ lsortq_comp (x:xs) _ = []
 -- p29 and 30 were skipped on the list at wiki.Haskell
 
 -- p31
+sq x = x * x
 dividesQ k n = n `mod` k == 0
-twoToSqrtN n = let sqrtN = (floor . sqrt) n in [2..sqrtN]
 
-isComposite :: (Integral t) => t -> Bool
-isComposite n = any (flip dividesQ n) (twoToSqrtN n)
+--sqrt_floor 2 = 1
+--sqrt_floor 3 = 1
+sqrt_floor x = 1 + index' (map sq [2..x]) (> x)
+
+--sqrt_floor x
+--  | (4 > x)
+
+
+--twoToSqrtN :: (RealFrac t1, Integral t, Floating t1) => t1 -> [t]
+--twoToSqrtN :: (Integral t) => t -> [t]
+--twoToSqrtN n = let sqrtN = toInteger $ (floor . sqrt) n in [2..sqrtN]
+
+
+--isComposite :: (Integral t) => t -> Bool
+--isComposite n = any (flip dividesQ n) (twoToSqrtN n)
+--isComposite n = any (\k -> dividesQ k n) (twoToSqrtN n)
+
 
 --isPrime :: (Num a) => a -> Bool
 --isPrime :: (Integral a, RealFrac a, Floating a) => a -> Bool
@@ -412,7 +427,26 @@ isComposite n = any (flip dividesQ n) (twoToSqrtN n)
 --  let sqrt_n = (ceiling (sqrt n))
 --  in (not $ any (flip dividesQ n) [2..sqrt_n])
 
+isPrime 1 = False
+isPrime n =
+  let sqrt_n = sqrt_floor n
+  in not $ any (flip dividesQ n) [2..sqrt_n]
 
+-- p32
+-- gcd_h assumes a > b, and both non-negative
+gcd_h a 0 = a
+gcd_h a b = gcd_h b (a `mod` b)
+
+gcd' a b
+  | (a' < b') = gcd_h b' a'
+  | otherwise = gcd_h a' b'
+  where (a', b') = (abs a, abs b) -- This may not be needed since mod may not care about signs, but just in case
+
+-- p33
+coprime x y = gcd' x y == 1
+
+-- p34
+totient_phi n = length $ filter (coprime n) [1..(n-1)]
 
 {-
 groups xs [k] = group_last [xs] k
