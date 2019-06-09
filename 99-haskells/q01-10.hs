@@ -271,11 +271,24 @@ groups_k_rest xs k = [ [x, y] | x <- subsequences xs, let y = xs \\ x, length x 
 
 apply_to_last xs f = (init xs) ++ [(f . last) xs]
 
-group_last xs k = [ (init xs) ++ tl | tl <- (groups_k_rest (last xs) k) ]
+group_last xs [k] = [ (init xs) ++ tl | tl <- (groups_k_rest (last xs) k) ]
+group_last xs (k1:ks) = concat $ map (\xs -> group_last xs [k1]) group_ks
+  where group_ks = group_last xs ks
+
+-- yss = map (\xs -> group_last xs 1) (group_last ["abcd"] 1)
+-- yss = concat $ map (\xs -> group_last xs 1) (group_last ["abcd"] 1)
+-- map (\xs -> group_last xs 1) $ group_last  ["abcd"] 1
+
+
 
 -- group_last xs k =
 
--- groups xs ks
+{-
+groups xs [k] = group_last [xs] k
+groups xs (k1:k2:ks)
+  where
+    next_grouping =
+-}
 
 --combos :: Int -> [a] -> [[a]]
 --combos k xs
