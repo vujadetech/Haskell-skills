@@ -259,7 +259,7 @@ combos k xs = ps
 combos' 0  _     = [[]]
 combos' _  []    = [[]]
 combos' 1 (x:xs)    = map (:[]) (x:xs)
-combos' k (x:xs) = x_combos ++ rest_combos
+combos' k (x:xs) = filter ((== k) . length) $ x_combos ++ rest_combos
   where
     x_combos = map (x:) (combos' (k-1) xs)
     rest_combos = combos' k xs
