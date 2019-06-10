@@ -22,3 +22,5 @@ He was doing so much hand-waving while presenting his paper at a conference that
 - ccc is a Cartesian Closed Category, not to be confused with _[C+C Music Factory](https://www.youtube.com/watch?v=LaTGrV58wec)_.
 
 - If you're accustomed to imperative programming, getting used to  functional style coding can really throw you for a _loop_.
+
+- In functional style, you won't get to write as many __loops__, and that may make you __loopy__!
