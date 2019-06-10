@@ -287,6 +287,10 @@ xss = ["abc", "de", "fgh", "de", "o"]
 min' [x] = x
 min' (x:xs) = min x (min' xs)
 
+max' [x]    = x
+max' (x:xs) = max x (max' xs)
+
+
 index' (x:xs) p
   | p x = 0
   | otherwise = 1 + index' xs p
@@ -583,15 +587,26 @@ gray n = (map ("0" ++) prev) ++ (map ("1" ++) (reverse prev))
 
 -- wiki fold version appears to be incorrect,
 -- it gives gray' 2 = ["00","10","01","11"]
+gray_wiki 0 = [""]
+gray_wiki n = foldr (\s acc -> ("0" ++ s):("1" ++ s):acc) [] $ gray' (n-1)
+
+-- debugged wiki version using even_parity function
 gray' 0 = [""]
---gray' n = foldr (\s acc -> ("0" ++ s):("1" ++ s):acc) [] $ gray' (n-1)
 gray' n = foldr (\s acc -> ((bit1 s) ++ s):((bit2 s) ++ s):acc) [] $ gray' (n-1)
   where
     bit1 s = if even_parity s then "0" else "1"
     bit2 s = if even_parity s then "1" else "0"
 
 even_parity = even . length . filter (\c -> c == '1')
--- bit str =
+
+distance [] [] = 0
+distance (x:xs) (y:ys)
+  | (x == y)  = distance xs ys
+  | otherwise = 1 + distance xs ys
+
+isGrayCodeQ xs = (max' $ zipWith distance xs (tail xs)) <= 1
+
+gw2 = gray_wiki 2
 
 
 {-

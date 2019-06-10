@@ -34,4 +34,4 @@ He was doing so much hand-waving while presenting his paper at a conference that
 		- [John Belushi/Dan Akroyd _Olympia Restaurant_ skit](https://www.youtube.com/watch?v=puJePACBoIo), "No coke, pepsi; no fries, cheeps"
 		- Oh, I forgot to finish the clock example, sorry. So, where were we? Ah, yes: 
 		- Darin from Bewitched
-		- [Eminem's Boy Band construction algorithm](https://www.youtube.com/watch?v=0QOya9-lwQk&feature=youtu.be&t=9m40s) - no Eminem wasn't flirting with Al Yankovic, although the "interview" is hilarious, you know what I'm sayin'?
+		- [Eminem's Boy Band construction algorithm](https://www.youtube.com/watch?v=0QOya9-lwQk&feature=youtu.be&t=9m40s) - no Eminem wasn't flirting with Weird Al Yankovic, although the "interview" is hilarious, you know what I'm sayin'?
