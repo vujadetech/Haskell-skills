@@ -35,3 +35,6 @@ He was doing so much hand-waving while presenting his paper at a conference that
 		- Oh, I forgot to finish the clock example, sorry. So, where were we? Ah, yes: 
 		- Darin from Bewitched
 		- [Eminem's Boy Band construction algorithm](https://www.youtube.com/watch?v=0QOya9-lwQk&feature=youtu.be&t=9m40s) - no Eminem wasn't flirting with Weird Al Yankovic, although the "interview" is hilarious, you know what I'm sayin'?
+
+#### More hilarious jokes
+- [Gray code](https://en.wikipedia.org/wiki/Gray_code), not to be confused with the _Gary Code_, which are the rules governing the Gary, Indiana based [Fight Club](https://en.wikipedia.org/wiki/Fight_Club).
