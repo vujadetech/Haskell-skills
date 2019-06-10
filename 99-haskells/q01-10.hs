@@ -450,7 +450,53 @@ totient_phi n = length $ filter (coprime n) [1..(n-1)]
 -- list comprehension also good, as shown in the solutions
 totient n = length [ c | c <- [1..n-1], coprime c n ]
 
+
+-- STREAM STUFF
+evens = map (*2) [1..]
+ones = 1 : ones -- Cf (define ones (cons-stream 1 ones)) in SICP 3.5.2 streams
+-- sequence accelerator for primes
+--primes' =
+filter_out k = filter (not . dividesQ k)
+--filter_out_mults k = filter (\x -> (not $ dividesQ k x) || ((==) k x))
+-- filter_out_mults k = k : filter (not . dividesQ k) [k+1..]
+--filter_out_mults k (k:xs) =
+filter_out_head (x:xs) = x : filter_out x xs
+
+-- n is counter, not prime number
+--filters :: (Integral a) => a -> [a]
+filters 1 =  2 : (filter_out 2 [2..])
+filters n =  next_prime : (filter_out next_prime (tail prev_filters))
+  where
+    prev_filters = filters (n-1)
+    next_prime = prev_filters !! 1
+
+filter_head n = head (filters n)
+--filters' 1 = filters 1
+--filters' n =
+
+nthPrime = (primes' !!)
+
+primes' = (map head) . (map filters) $ [1..]
+
+odds = filter_out 2 [1..]
+
+nats = [1..]
+
+{-
+primes' =
+  2 : filter_out_mults hd primes'
+  where
+    hd = head primes'
+    hdIsPrime = isPrime hd
+    next_prime = prime_after hd
+-}
+
+--twoNodds = filter_out_mults 2 [2..]
+
+--primes'' = intersect twoNodds (filter_out_mults (head (tail primes'')) primes'')
+
 -- p35, prime factors with dups
+-- TODO: make more efficient, since you can ignore multiples of 2, then mults of 3, etc
 primes = filter isPrime [2..]
 prime_after x = head $ filter (> x) primes
 
@@ -515,11 +561,10 @@ phi_pf = foldl (*) 1 . map phi_h . prime_factors_mult
 
 phi_eff = foldl (*) 1 . map phi_h . prime_factors_mult_eff
 
-
 -- p39
-primesR a b = [ x | x <- (takeWhile (<= b) primes), x >= a]
+primesR a b = [ x | x <- (takeWhile (<= b) primes), x >= a ]
 
--- p39
+
 
 {-
 groups xs [k] = group_last [xs] k
