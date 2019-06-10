@@ -447,6 +447,21 @@ coprime x y = gcd' x y == 1
 
 -- p34
 totient_phi n = length $ filter (coprime n) [1..(n-1)]
+-- list comprehension also good, as shown in the solutions
+totient n = length [ c | c <- [1..n-1], coprime c n ]
+
+-- p35, prime factors with dups
+primes = filter isPrime [2..]
+prime_after x = head $ filter (> x) primes
+
+-- primePower p n = k where p^k | n but p^(k+1) doesn't.
+primePower :: (Num t, Integral a) => a -> a -> t
+primePower p n
+  | not $ dividesQ p n = 0
+  | otherwise = 1 + primePower p (n `div` p)
+
+primeFactors x = concat $ zipWith replicate primePowers primes
+  where primePowers = zipWith primePower primes (replicate (sqrt_floor x) x)
 
 {-
 groups xs [k] = group_last [xs] k
