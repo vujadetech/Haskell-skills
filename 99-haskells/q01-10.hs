@@ -460,8 +460,15 @@ primePower p n
   | not $ dividesQ p n = 0
   | otherwise = 1 + primePower p (n `div` p)
 
-primeFactors x = concat $ zipWith replicate primePowers primes
-  where primePowers = zipWith primePower primes (replicate (sqrt_floor x) x)
+trimRight xs = let reversed = reverse xs in reverse (dropWhile (== 0) reversed)
+
+primePowers x = trimRight $ zipWith primePower primes (replicate (sqrt_floor x) x)
+
+primeFactors x = concat $ zipWith replicate (primePowers x) primes
+--  where primePowers = zipWith primePower primes (replicate (sqrt_floor x) x)
+
+-- p 36, prime_factors_mult
+prime_factors_mult x = filter ((/= 0) . snd) $ zip primes (primePowers x)
 
 {-
 groups xs [k] = group_last [xs] k
