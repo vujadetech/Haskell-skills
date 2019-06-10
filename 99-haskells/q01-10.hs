@@ -460,15 +460,66 @@ primePower p n
   | not $ dividesQ p n = 0
   | otherwise = 1 + primePower p (n `div` p)
 
+primePowerFlip = flip primePower
+
 trimRight xs = let reversed = reverse xs in reverse (dropWhile (== 0) reversed)
 
-primePowers x = trimRight $ zipWith primePower primes (replicate (sqrt_floor x) x)
+firstPrimeFactor x
+  | isPrime x = x
+  | otherwise = head $ dropWhile (not . flip dividesQ x) primes
+
+ten90 :: Int
+ten90 = 10090
+
+-- this could be more efficient
+primePowers x
+  | isPrime x = []
+  | otherwise = trimRight $ zipWith primePower primes (replicate (x `div` p1) x) -- (replicate (sqrt_floor x) x)
+  where p1 = firstPrimeFactor x
+
+powers x ps
+  | x < p1       = []
+  | isPrime x    = [(x, 1)]
+  | otherwise    = (p1, k1) : powers (x `div` p1_k1) rest_ps
+  where
+    p1 = head ps
+    rest_ps = tail ps
+    k1 = primePower p1 x
+    p1_k1 = p1 ^ k1
+
+--factorization x = filter ((/= 0) . snd) $ powers x primes
+factorization = filter ((/= 0) . snd) . (flip powers primes)
+
+-- primePowers improved for efficiency
+--primePowers_eff x = map snd $ powers x primes
 
 primeFactors x = concat $ zipWith replicate (primePowers x) primes
---  where primePowers = zipWith primePower primes (replicate (sqrt_floor x) x)
+--  where primePowers' = zipWith primePower primes (replicate (sqrt_floor x) x)
 
 -- p 36, prime_factors_mult
 prime_factors_mult x = filter ((/= 0) . snd) $ zip primes (primePowers x)
+-- filter ((/= 0) . snd) $ zip primes . primePowers
+-- point free version
+prime_factors_mult_pf = filter ((/= 0) . snd) . zip primes . primePowers
+
+prime_factors_mult_eff = factorization
+
+-- p37, Euler totient phi, improved
+-- phi helper
+phi_h p_k = let (p, k) = p_k in (p - 1) * p^(k-1)
+
+phi x = foldl (*) 1 $ map phi_h $ prime_factors_mult x
+
+-- phi, point free version
+phi_pf = foldl (*) 1 . map phi_h . prime_factors_mult
+
+phi_eff = foldl (*) 1 . map phi_h . prime_factors_mult_eff
+
+
+-- p39
+primesR a b = [ x | x <- (takeWhile (<= b) primes), x >= a]
+
+-- p39
 
 {-
 groups xs [k] = group_last [xs] k
