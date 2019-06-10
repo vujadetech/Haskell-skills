@@ -20,3 +20,5 @@ He was doing so much hand-waving while presenting his paper at a conference that
 - _[Shoot that monic arrow through my caaaaategoryyyyyy](https://www.youtube.com/watch?v=a70yJwgQtzo)_
 
 - ccc is a Cartesian Closed Category, not to be confused with _[C+C Music Factory](https://www.youtube.com/watch?v=LaTGrV58wec)_.
+
+- If you're accustomed to imperative programming, getting used to  functional style coding can really throw you for a _loop_.
