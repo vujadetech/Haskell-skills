@@ -588,7 +588,18 @@ gray n = (map ("0" ++) prev) ++ (map ("1" ++) (reverse prev))
 -- wiki fold version appears to be incorrect,
 -- it gives gray' 2 = ["00","10","01","11"]
 gray_wiki 0 = [""]
-gray_wiki n = foldr (\s acc -> ("0" ++ s):("1" ++ s):acc) [] $ gray' (n-1)
+gray_wiki n = foldr (\s acc -> ("0" ++ s):("1" ++ s):acc) [] $ gray_wiki (n-1)
+
+gray_wiki' 0 = [""]
+gray_wiki' n = foldr (\s acc -> ("0" ++ s):("1" ++ s):acc) [] $ gray_wiki' (n-1)
+
+-- Refactor wiki version by folding on each half, although honestly I'm
+-- starting to doubt if folding makes sense for this problem given
+-- that folding is a reductive process and gray codes get longer as n increases, but here it is:
+gray_2fold 0 = [""]
+gray_2fold n =
+  (foldr (\s acc -> ("0" ++ s):acc) [] prev) ++ (foldr (\s acc -> ("1" ++ s):acc) [] (reverse prev))
+  where prev = gray_2fold (n-1)
 
 -- debugged wiki version using even_parity function
 gray' 0 = [""]
@@ -604,10 +615,10 @@ distance (x:xs) (y:ys)
   | (x == y)  = distance xs ys
   | otherwise = 1 + distance xs ys
 
-isGrayCodeQ xs = (max' $ zipWith distance xs (tail xs)) <= 1
+isGrayCodeQ xs = (max' $ zipWith distance xs (rotate xs 1)) <= 1
 
-gw2 = gray_wiki 2
-
+gray_wiki_2_IsGrayCode = isGrayCodeQ $ gray_wiki 2 -- => False
+gray_2fold_2_IsGrayCode = isGrayCodeQ $ gray_2fold 2 -- => True
 
 {-
 groups xs [k] = group_last [xs] k
