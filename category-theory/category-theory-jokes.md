@@ -29,7 +29,7 @@ He was doing so much hand-waving while presenting his paper at a conference that
 
 - Fancy word Friday: _modulo_
 	- Ok, when [certain eggheads and know-it-alls](https://www.youtube.com/watch?v=cTjHf77FqTI) use a word like _modulo_ - not that they used it there but Harris did at one point in a different interview, I just couldn't find the clip - which originated in mathematics but can make sense figuratively in non-technical areas, it's because they want to emphasize that two different things can be considered equal even though they're not by ignoring trivial differences that aren't relevant in a given context. For example, an analog wall clock simply say
-	- 
+	
 	
 	
 	
