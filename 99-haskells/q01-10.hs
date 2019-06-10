@@ -570,6 +570,13 @@ primePair p = (isPrime . fst) p && (isPrime . snd) p
 --goldback x =
 goldbach n = head $ dropWhile (not . primePair) $ map (\x -> (x, n - x)) $ primesR 2 n
 
+-- p41
+goldbach_list a b = map goldbach evens
+  where evens = filter (dividesQ 2) [a..b]
+
+-- lb = lower bound version
+goldbach_list_lb a b lb = filter (\p -> (fst p > lb) && (snd p > lb)) $ goldbach_list a b
+
 {-
 groups xs [k] = group_last [xs] k
 groups xs (k1:k2:ks)
