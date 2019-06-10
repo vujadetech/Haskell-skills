@@ -563,8 +563,12 @@ phi_eff = foldl (*) 1 . map phi_h . prime_factors_mult_eff
 
 -- p39
 primesR a b = [ x | x <- (takeWhile (<= b) primes), x >= a ]
+primesR' a b = [ x | x <- (takeWhile (<= b) primes'), x >= a ]
 
-
+-- p40
+primePair p = (isPrime . fst) p && (isPrime . snd) p
+--goldback x =
+goldbach n = head $ dropWhile (not . primePair) $ map (\x -> (x, n - x)) $ primesR 2 n
 
 {-
 groups xs [k] = group_last [xs] k
