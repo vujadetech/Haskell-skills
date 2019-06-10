@@ -24,3 +24,5 @@ He was doing so much hand-waving while presenting his paper at a conference that
 - If you're accustomed to imperative programming, getting used to  functional style coding can really throw you for a _loop_.
 
 - In functional style, you won't get to write as many __loops__, and that may make you __loopy__!
+
+- If you want to be successful in computer science, it's __imperative__ that you learn __functional programming__. Conversely, to __function__ well you will still need to know __imperative__. However, learning __category theory__ isn't a [__categorical imperative__](https://en.wikipedia.org/wiki/Categorical_imperative). In fact, studying too much category theory could drive you [__categorially insane__](https://www.youtube.com/watch?v=RijB8wnJCN0)!
