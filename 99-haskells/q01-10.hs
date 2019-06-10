@@ -573,9 +573,14 @@ goldbach n = head $ dropWhile (not . primePair) $ map (\x -> (x, n - x)) $ prime
 -- p41
 goldbach_list a b = map goldbach evens
   where evens = filter (dividesQ 2) [a..b]
-
 -- lb = lower bound version
 goldbach_list_lb a b lb = filter (\p -> (fst p > lb) && (snd p > lb)) $ goldbach_list a b
+
+-- p49, gray code
+gray 1 = ["0" ,"1"]
+gray n = (map ("0" ++) prev) ++ (map ("1" ++) (reverse prev))
+  where prev = gray (n-1)
+
 
 {-
 groups xs [k] = group_last [xs] k
