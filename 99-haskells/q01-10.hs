@@ -581,7 +581,7 @@ goldbach_list a b = map goldbach evens
 goldbach_list_lb a b lb = filter (\p -> (fst p > lb) && (snd p > lb)) $ goldbach_list a b
 
 -- p49, gray code
-gray 1 = ["0" ,"1"]
+gray 1 = ["0", "1"]
 gray n = (map ("0" ++) prev) ++ (map ("1" ++) (reverse prev))
   where prev = gray (n-1)
 
