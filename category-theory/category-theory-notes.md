@@ -93,6 +93,9 @@ a x 0 = 0 since (a, Void) ~ Void, b/c there is no Void available to make the pai
 
 Also 1 + a is Maybe since it's either a Just x for some x of type a, or it's Nothing which is a unit type (), or at least isomorphic to it.
 
+- Bifunctors example (sq, cube like normal)
+	- import Data.Bifunctor; pSqCube = bimap sq cube; pSqCube (2, 3)  => (4, 27). It is _figuratively_ just that simple.
+
 #### End Milewski YT cat theory playlist
 
 #### Other
