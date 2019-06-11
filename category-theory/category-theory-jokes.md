@@ -43,5 +43,5 @@ He was doing so much hand-waving while presenting his paper at a conference that
 
 - Redo wonder showzen ["Patience", but find the original interview](https://www.youtube.com/watch?v=sltSm5mUniw) but with Friedman's "Why can't we have recursion?" joke. 
 
-
+- Ballmer, ballmering (verb, gerund), Defn: like [Jack Donaghy's _Reaganing_ from _30 Rock_](https://www.youtube.com/results?search_query=30+rock+reaganing), but with Steve Ballmer instead of Ronald Reagan.
 
