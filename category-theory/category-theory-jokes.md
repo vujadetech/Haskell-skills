@@ -39,7 +39,4 @@ He was doing so much hand-waving while presenting his paper at a conference that
 #### More hilarious jokes
 - [Gray code](https://en.wikipedia.org/wiki/Gray_code), not to be confused with the _Gary Code_, which are the rules governing the Gary, Indiana based [Fight Club](https://en.wikipedia.org/wiki/Fight_Club).
 
-- Visual Basic 1.0 was a dependently typed concurrent pure total functional programming language. Ponder on this: [why was Steve Ballmer always so excited](https://www.youtube.com/watch?v=I14b-C67EXY)?
-
-on stage:
-https://www.youtube.com/watch?v=_WW2JWIv6G8
+- Visual Basic 1.0 was a dependently typed concurrent pure total functional programming language. Ponder on this: [why was Steve Ballmer always so excited](https://www.youtube.com/watch?v=I14b-C67EXY)? Ballmer and Gates' private phrase was "Unused names are written dimly, but they do need to be there," or when they were in a hurry, for example when Ballmer was backstage at a MS event clearing coat racks like track hurdles en route to give a pep scream to a few thousand MS employees, simply "Dim names."
