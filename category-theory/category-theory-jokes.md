@@ -45,4 +45,15 @@ He was doing so much hand-waving while presenting his paper at a conference that
 
 - Ballmer, ballmering (verb, gerund), Defn: like [Jack Donaghy's _Reaganing_ from _30 Rock_](https://www.youtube.com/results?search_query=30+rock+reaganing), but with Steve Ballmer instead of Ronald Reagan.
 
-- The Idris programming language was created by British actor Idris Elba, who was inspired to enter the tech world because Ashton Kutcher had done it, so how hard can it be? Idris is a purely functional, dependently typed programming language, so it is real eye-opener for somone with a background in imperative languages like Java/C++. If you've never coded in a functional language before, when you begin working with Idris you'll be stunned to realize that a black person can have a british accent. So here's one for you to scratch off today's todo list: _Mind blown_. 
+- The [Idris programming language](https://en.wikipedia.org/wiki/Idris_(programming_language)) was created by [British actor Idris Elba](https://en.wikipedia.org/wiki/Idris_Elba), who was inspired to enter the tech world because Ashton Kutcher had done it, so how hard can it be? Idris is a purely functional, dependently typed programming language, so it's a real eye-opener for somone with a background in imperative languages like Java/C++. If you've never coded in a functional language before, when you begin working with Idris you'll be stunned to realize that a black person can have a british accent. So here's one for you to scratch off today's todo list: _Mind blown_.
+
+- Skit: [Two professors finishing a chat with lots of word salad since the paper is on the efficient implementation of second order logic in dependently typed programming languages]
+	- [As other prof leaves, the secretary comes to the door] 
+	- _Professor Funkdoor, would you like me to show you how to use your Amazon kindle now?_
+	- Actually I think I do this on my own. I got my Ph.D. from Stanford in the semantics of programming languages, how hard can it be to figure out a kindle?
+	- [several minutes later is still fumbling to get it turned on]
+	
+	
+	-
+	
+	
