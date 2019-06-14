@@ -45,3 +45,4 @@ He was doing so much hand-waving while presenting his paper at a conference that
 
 - Ballmer, ballmering (verb, gerund), Defn: like [Jack Donaghy's _Reaganing_ from _30 Rock_](https://www.youtube.com/results?search_query=30+rock+reaganing), but with Steve Ballmer instead of Ronald Reagan.
 
+- The Idris programming language was created by actor Idris Elba, who was inspired to enter the tech world after Ashton Kutcher had so already, so how hard can it be? Idris is a purely functional, dependently typed programming language, so it is real eye-opener for somone with a background in imperative languages like Java/C++/COBOL/Fortran/etc. If you've never coded in a functional language before, when you begin with Idris you'll be stunned to realize that a black person can have a british accent. So here's one for you to scratch off today's todo list: _Mind blown_. 
