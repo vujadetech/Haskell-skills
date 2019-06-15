@@ -45,7 +45,7 @@ He was doing so much hand-waving while presenting his paper at a conference that
 
 - Ballmer, ballmering (verb, gerund), Defn: like [Jack Donaghy's _Reaganing_ from _30 Rock_](https://www.youtube.com/results?search_query=30+rock+reaganing), but with Steve Ballmer instead of Ronald Reagan.
 
-- The [Idris programming language](https://en.wikipedia.org/wiki/Idris_(programming_language)) was created by [British actor Idris Elba](https://en.wikipedia.org/wiki/Idris_Elba), who was inspired to enter the tech world because Ashton Kutcher had done it, so how hard can it be? Idris is a purely functional, dependently typed programming language, so it's a real eye-opener for someone with a background in imperative languages like Java/C++. If you've never coded in a functional language before, when you begin working with Idris you'll be stunned to realize that a black person can have a british accent. So here's one for you to scratch off today's todo list: _Mind blown_.
+- The [Idris programming language](https://en.wikipedia.org/wiki/Idris_(programming_language)) was created by [British actor Idris Elba](https://en.wikipedia.org/wiki/Idris_Elba), who was inspired to enter the tech world because Ashton Kutcher had done it, so how hard can it be? Idris is a purely functional, dependently typed programming language, so it's a real eye-opener for someone with a background in imperative programming. If you've never coded in a functional language before, when you begin working with Idris you'll be stunned to realize that a black person can have a british accent. So here's one for you to scratch off today's todo list: _Mind blown_.
 
 - Skit: [Two professors finishing a chat with lots of word salad since the paper is on the efficient implementation of second order logic in dependently typed programming languages]
 	- [As other prof leaves, the secretary comes to the door] 
@@ -58,9 +58,9 @@ He was doing so much hand-waving while presenting his paper at a conference that
 1. Type theory
 	- No surprises here, type theory has had solid rankings on the TIOBE index since its inception in the 1920s. [russell style contradictions] That sort of contradiction could have undermined every algorithm in computer science. Luckily there were no physical computers in the 1920s, just theoretical models, so it wasn't a big deal. 
 2. Type theory
-3. In third place is newcomer Typ thry. It's still Type Theory, but it's stylized that way b/c apparently everything becomes hipper when you delete the vowels.
+3. In third place is newcomer typ thry. It's still type theory, but it's stylized that way b/c apparently everything becomes hipper when you get rid of the vowels.
 4. Type theory
-5. Last year's first place holder theory is now in 5th place. Although many deride type theory as a dead theory, or at least a theory that deserves to die, type theory has tenaciously hung on. As type theory is part of the compositional glue that binds functional code together, it's been called "the duct tape of the lambda calculus."
+5. Last year's fourth place holder type theory is now in 5th place. Although some deride type theory as a dead theory, or at least a theory that deserves to die, type theory has tenaciously hung on. As type theory is part of the compositional glue that binds functional code together, it's been called "the duct tape of the lambda calculus."
 
 So there you have it, 5 outstanding type theory. Which type theory do you plan to learn next?
  
