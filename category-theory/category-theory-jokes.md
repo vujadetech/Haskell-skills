@@ -54,6 +54,15 @@ He was doing so much hand-waving while presenting his paper at a conference that
 	- [several minutes later is still fumbling to get it turned on]
 	
 	
-	-
+### Top 5 programming languages to learn in 2020
+1. Type theory
+	- No surprises here, type theory has had solid rankings on the TIOBE index since its inception in the 1920s
+2. Type theory
+3. Displacing 
+4. Type theory
+5. Last year's first place holder theory is now in 5th place. Although many deride type theory as a dead theory, or at least a theory that deserves to die, type theory has tenaciously hung on. As type theory is part of the compositional glue that binds (pun intended) functional code together, it's been called "the duct tape of the lambda calculus."
+
+So there you have it, 5 outstanding type theory. Which type theory do you plan to learn next?
+ 
 	
 	
