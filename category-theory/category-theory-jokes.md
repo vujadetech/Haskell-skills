@@ -1,4 +1,4 @@
-### Category theory jokes
+### Category theory jokes [in progress]
 
 - Is [Scattergories](https://en.wikipedia.org/wiki/Scattergories) a category? If yes, provide a proof and otherwise, a counterexample. 
 
@@ -60,9 +60,14 @@ He was doing so much hand-waving while presenting his paper at a conference that
 2. Type theory
 3. In third place is newcomer typ thry. It's still type theory, but it's stylized that way b/c apparently everything becomes hipper when you get rid of the vowels.
 4. Type theory
-5. Last year's fourth place holder type theory is now in 5th place. Although some deride type theory as a dead theory, or at least a theory that deserves to die, type theory has tenaciously hung on. As type theory is part of the compositional glue that binds functional code together, it's been called "the duct tape of the lambda calculus."
+5. Last year's fourth place holder type theory is now in 5th place. Type theory has been inching its way down the rankings for several years straight, leading some to deride type theory as a dead theory, or at least a theory that deserves to die. Nevertheless, type theory has tenaciously hung on. As type theory is part of the compositional glue that binds functional code together, it's been called "the duct tape of the lambda calculus."
 
 So there you have it, 5 outstanding type theory. Which type theory do you plan to learn next?
  
-	
-	
+##### Kurt Godel showed that formulas can gossip about each other. So they could, for example, have their own TMZ. 
+- [Godel numbering] ...
+
+
+#### General jokes, yuks and laffs (not category theory specific, but hopefully as or more hilarious, or nearly as much)
+
+- Open source software, not to be confused with, open source softwear, open sores software, open sores softwear, or "Open sores, soft where?"
