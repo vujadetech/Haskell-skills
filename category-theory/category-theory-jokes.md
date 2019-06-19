@@ -71,3 +71,6 @@ So there you have it, 5 outstanding type theory. Which type theory do you plan t
 #### General jokes, yuks and laffs (not category theory specific, but hopefully as or more hilarious, or nearly as much)
 
 - Open source software, not to be confused with, open source softwear, open sores software, open sores softwear, or "Open sores, soft where?"
+
+- primitive recursion is harder than 3 times 9, I teh u wut.
+
