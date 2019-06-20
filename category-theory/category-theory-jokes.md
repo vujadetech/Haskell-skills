@@ -100,10 +100,14 @@ and [base cases](https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn-images-1
 
 - Fishburne matrix "What if I told you..."
 	- ... functional and OO programming are compatible
-	- ... functional programming was invented by mathematicians in the 1920s.
+	- ... functional programming was invented by mathematicians in the 1920s
 	- ... linear algebra involves much more than just matrices
 	- ... all of OOP can be simulated in a functional language like Scheme
 	- ... OOP was originally designed so that the emphasis should be on _the messages between objects_, rather than _the objects themselves_
 	- ... an arrow in category theory isn't necessarily a function
 	- ... monads don't have _a damn thing_ to do with burritos
+	- ... there isn't a single definition of randomness
+	- ... the sequence "1 1 1 1 1 1 1 1 1 1" could be considered random
+	- ... solid objects are composed primarily of empty space
+	- ... at the level of atomic particles, nature is fundamentally random
 	
