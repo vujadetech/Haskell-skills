@@ -71,6 +71,8 @@ So there you have it, 5 outstanding type theory. Which type theory do you plan t
 
 #### Generic jokes, yuks and laffs (not category theory specific, but hopefully as or more hilarious, or nearly as much, one can only hope)
 
+- Definition of _homomorphism_: In abstract algebra and category theory, a  _homomorphism_ is a ... you know what, it doesn't matter because whatever that morphism does with his partner in the privacy of his own functor is his own business.
+
 - Open source software, not to be confused with: open source softwear, open sores software, open sores softwear, or "Open sores, soft where?"
 
 - Primitive recursion is harder than 3 times 9, I teh u wut.
@@ -101,13 +103,16 @@ and [base cases](https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn-images-1
 - Fishburne matrix "What if I told you..."
 	- ... functional and OO programming are compatible
 	- ... functional programming was invented by mathematicians in the 1920s
-	- ... linear algebra involves much more than just matrices
+	- ... linear algebra involves much more than just matrices (so much so that it is sometimes affectionally chided as being "abstract nonsense")
 	- ... all of OOP can be simulated in a functional language like Scheme
-	- ... OOP was originally designed so that the emphasis should be on _the messages between objects_, rather than _the objects themselves_
+	- ... OOP was originally designed so that the emphasis should be on _the messages between objects_, not _the objects themselves_
 	- ... an arrow in category theory isn't necessarily a function
 	- ... monads don't have _a damn thing_ to do with burritos
 	- ... there isn't a single definition of randomness
 	- ... the sequence "1 1 1 1 1 1 1 1 1 1" could be considered random
 	- ... solid objects are composed primarily of empty space
 	- ... at the level of atomic particles, nature is fundamentally random
+	- ... mathematics existed for millenia before the introduction of probability theory, when it was introduced it was considered heretical, and even to this day there isn't complete agreement on what constitutes randomness owing to subtleties in the differences as defined by mathematicians, computer scientists and philosophers like Kolmogorov, Martin-Löf, Chaitin, Church and Borel.
+	
+	
 	
