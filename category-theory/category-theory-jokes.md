@@ -102,17 +102,20 @@ and [base cases](https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn-images-1
 
 - Fishburne matrix "What if I told you..."
 	- ... functional and OO programming are compatible
+	- ... an OO system forms a category where the objects are classes and the morphisms are messages passed between class instances
 	- ... functional programming was invented by mathematicians in the 1920s
-	- ... linear algebra involves much more than just matrices (so much so that it is sometimes affectionally chided as being "abstract nonsense")
+	- ... linear algebra involves much more than just matrices (so much so that it is sometimes affectionally chided as being [abstract nonsense](https://en.wikipedia.org/wiki/Abstract_nonsense))
 	- ... all of OOP can be simulated in a functional language like Scheme
 	- ... OOP was originally designed so that the emphasis should be on _the messages between objects_, not _the objects themselves_
 	- ... an arrow in category theory isn't necessarily a function
-	- ... monads don't have _a damn thing_ to do with burritos
-	- ... there isn't a single definition of randomness
+	- ... monads don't have a damn thing to do with burritos
+	- ... there's more than one definition of randomness
 	- ... the sequence "1 1 1 1 1 1 1 1 1 1" could be considered random
 	- ... solid objects are composed primarily of empty space
 	- ... at the level of atomic particles, nature is fundamentally random
 	- ... mathematics existed for millenia before the introduction of probability theory, when it was introduced it was considered heretical, and even to this day there isn't complete agreement on what constitutes randomness owing to subtleties in the differences of randomness as defined by mathematicians, computer scientists and philosophers like Kolmogorov, Martin-Löf, Chaitin, Church and Borel.
-	- ... randomness in quantum mechanics isn't mutually exclusive with determinism in philosophy.
+	- ... randomness in quantum mechanics isn't mutually exclusive with determinism in philosophy
+	- ... religious/spiritual belief is contradicted neither by biological evolution nor by philosophical determinism
+	- ... Charles Darwin was a minister before he became a biologist
 	
 	
