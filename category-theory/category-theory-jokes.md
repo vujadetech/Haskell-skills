@@ -92,7 +92,7 @@ and [base cases](https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn-images-1
 - [The functional imperative](https://www.google.com/imgres?imgurl=https%3A%2F%2Fcs.lmu.edu%2F~ray%2Fimages%2Fiterative-harder.png&imgrefurl=https%3A%2F%2Fcs.lmu.edu%2F~ray%2Fnotes%2Fbacktracking%2F&docid=PeINhEMY0jKgTM&tbnid=fKJSljvDu2GvlM%3A&vet=10ahUKEwiam42JrvfiAhVImuAKHZw9CrgQMwg6KA8wDw..i&w=500&h=302&bih=710&biw=1100&q=fishburne%20what%20if%20i%20told%20you%20iterative%20solutions%20are%20often%20harder%20than%20recursive&ved=0ahUKEwiam42JrvfiAhVImuAKHZw9CrgQMwg6KA8wDw&iact=mrc&uact=8)
 	- See "imperative mood in movies" YT playlist
 	
-##### Memes: b/c there is a dangerous shortage of memes on the interwebs
+#### Memes: b/c there is a dangerous shortage of memes on the interwebs
 
 - Sarcastic Wonka
 	- Oh, you wrote a functor in Haskell? Please prattle on about your doctoral research in category theory.
@@ -112,7 +112,7 @@ and [base cases](https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn-images-1
 	- ... the sequence "1 1 1 1 1 1 1 1 1 1" could be considered random
 	- ... solid objects are composed primarily of empty space
 	- ... at the level of atomic particles, nature is fundamentally random
-	- ... mathematics existed for millenia before the introduction of probability theory, when it was introduced it was considered heretical, and even to this day there isn't complete agreement on what constitutes randomness owing to subtleties in the differences as defined by mathematicians, computer scientists and philosophers like Kolmogorov, Martin-Löf, Chaitin, Church and Borel.
-	
+	- ... mathematics existed for millenia before the introduction of probability theory, when it was introduced it was considered heretical, and even to this day there isn't complete agreement on what constitutes randomness owing to subtleties in the differences of randomness as defined by mathematicians, computer scientists and philosophers like Kolmogorov, Martin-Löf, Chaitin, Church and Borel.
+	- ... randomness in quantum mechanics isn't mutually exclusive with determinism in philosophy.
 	
 	
