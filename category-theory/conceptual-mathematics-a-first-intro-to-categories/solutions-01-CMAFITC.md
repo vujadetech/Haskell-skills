@@ -30,3 +30,13 @@
 - __Ex 10__ Spse h = gf, so h is an arrow from A to C, and let f' and g' be the inverses of f and g, respectively. Let h' := f' * g' : C -> A. Then h * h' = (gf)(f' * g') = g(f (f' * g')) = g((f*f') g') =g(I_B)g' = g*g' = I_C, and h' * h = (f' * g')(gf) = f' * (g'(gf)) = f' * (g'*g) * f = f'(I_B) * f = f' * f = I_A, so h is an iso with h' = f' * g', that is, h inverse is g inverse before f inverse.
 
 - __Ex 11__ There are six mappings f : A -> B that are 1-1 and hence invertible, so any of them will suffice to show f is an iso. Since C has only two elements, there can't be an iso from A -> C b/c any mapping from B, which has 3 elements, will fail to be 1-1.
+
+- __Ex 12__ In both cases it is six morphisms since they must be 1-1 to be invertible.
+
+#### Session 4, Division of maps: isomorphisms
+
+- __Ex 2__ f(odd) = neg, f(even) = pos.
+
+- __Ex 3__
+	- (a) p doesn't have an inverse since if it did have an inverse, say q, then q from R+ to R+ would be q(x) = x - 1, but then q(
+	- (b) 

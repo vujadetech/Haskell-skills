@@ -37,7 +37,7 @@ He was doing so much hand-waving while presenting his paper at a conference that
 		- [Eminem's Boy Band construction algorithm](https://www.youtube.com/watch?v=0QOya9-lwQk&feature=youtu.be&t=9m40s) - no Eminem wasn't flirting with Weird Al Yankovic, although the "interview" is hilarious, you know what I'm sayin'?
 
 #### More hilarious jokes
-- [Gray code](https://en.wikipedia.org/wiki/Gray_code), not to be confused with the _Gary Code_, which is the set of rules governing the Gary, Indiana based [Fight Club](https://en.wikipedia.org/wiki/Fight_Club).
+- [Gray code](https://en.wikipedia.org/wiki/Gray_code), not to be confused with _The Gary Code_, which is the set of rules governing the Gary, Indiana based [Fight Club](https://en.wikipedia.org/wiki/Fight_Club).
 
 - _Visual Basic 1.0_ was a _dependently typed, concurrent, pure and total functional programming language_. Ponder on this: [why was Steve Ballmer always so excited](https://www.youtube.com/watch?v=I14b-C67EXY)? Ballmer and Gates' private phrase was "Unused names are written dimly, but they do need to be there," or when they were in a hurry, for example when Ballmer was backstage at an MS event clearing coat racks like track hurdles en route to give a pep scream to a few thousand MS employees, simply "Dim names." And how does one create a variable in VB? "Dim aMAYzing", amirite? 
 
@@ -68,9 +68,16 @@ So there you have it, 5 outstanding type theory. Which type theory do you plan t
 - [Godel numbering] ...
 
 
-#### General jokes, yuks and laffs (not category theory specific, but hopefully as or more hilarious, or nearly as much, one can only hope)
+#### Generic jokes, yuks and laffs (not category theory specific, but hopefully as or more hilarious, or nearly as much, one can only hope)
 
 - Open source software, not to be confused with: open source softwear, open sores software, open sores softwear, or "Open sores, soft where?"
 
 - Primitive recursion is harder than 3 times 9, I teh u wut.
 
+- (not a joke so much as a non-humorous observation) Sir Isaac Newton, and Gottfried Leibniz are gonna feel so stupid when they find out that no one cares about calculus anymore because now it's all about discrete math, type theory and functional programming. 
+
+Recursion-IRL.md [meme](https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.byte-by-byte.com%2Fwp-content%2Fuploads%2F2019%2F05%2Fcimrecursion-understand-min.png&imgrefurl=https%3A%2F%2Fwww.byte-by-byte.com%2Frecursion-sp-closed%2F&docid=VJfj027Epbd9NM&tbnid=ZzEVdi5VlQTIFM%3A&vet=10ahUKEwib_-Kvq_fiAhUiZN8KHVRNB4IQMwgzKAgwCA..i&w=568&h=335&bih=710&biw=1100&q=what%20if%20i%20told%20you%20iterative%20solutions%20are%20often%20harder%20than%20recursive%20meme&ved=0ahUKEwib_-Kvq_fiAhUiZN8KHVRNB4IQMwgzKAgwCA&iact=mrc&uact=8)
+
+- [The functional imperative], 
+	- See "imperative mood in movies" YT playlist
+	
