@@ -86,6 +86,6 @@ and [base cases](https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn-images-1
 
 and my own fishburne meme, unless I just couldn't find it: "What if i told you functional and object oriented programming aren't mutually exclusive."
 
-- [The functional imperative], 
+- [The functional imperative](https://www.google.com/imgres?imgurl=https%3A%2F%2Fcs.lmu.edu%2F~ray%2Fimages%2Fiterative-harder.png&imgrefurl=https%3A%2F%2Fcs.lmu.edu%2F~ray%2Fnotes%2Fbacktracking%2F&docid=PeINhEMY0jKgTM&tbnid=fKJSljvDu2GvlM%3A&vet=10ahUKEwiam42JrvfiAhVImuAKHZw9CrgQMwg6KA8wDw..i&w=500&h=302&bih=710&biw=1100&q=fishburne%20what%20if%20i%20told%20you%20iterative%20solutions%20are%20often%20harder%20than%20recursive&ved=0ahUKEwiam42JrvfiAhVImuAKHZw9CrgQMwg6KA8wDw&iact=mrc&uact=8)
 	- See "imperative mood in movies" YT playlist
 	
