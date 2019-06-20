@@ -35,6 +35,7 @@ He was doing so much hand-waving while presenting his paper at a conference that
 		- Oh, I forgot to finish the clock example, sorry. So, where were we? Ah, yes: 
 		- Darin from Bewitched
 		- [Eminem's Boy Band construction algorithm](https://www.youtube.com/watch?v=0QOya9-lwQk&feature=youtu.be&t=9m40s) - no Eminem wasn't flirting with Weird Al Yankovic, although the "interview" is hilarious, you know what I'm sayin'?
+		- Memes = (famous quote/movie line/song lyric/etc) modulo (a common experience but in a different area than the original)
 
 #### More hilarious jokes
 - [Gray code](https://en.wikipedia.org/wiki/Gray_code), not to be confused with _The Gary Code_, which is the set of rules governing the Gary, Indiana based [Fight Club](https://en.wikipedia.org/wiki/Fight_Club).
@@ -84,8 +85,25 @@ and [unrelated bubble sort](https://www.google.com/imgres?imgurl=https%3A%2F%2Fc
 
 and [base cases](https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn-images-1.medium.com%2Fmax%2F1200%2F0*PgiLG7NytqKAh8WT.&imgrefurl=https%3A%2F%2Fmedium.com%2F%40yonislots%2F4-common-sorting-algorithms-what-to-know-and-the-big-o-63ef76268991&docid=kgJQ6dqMpea8gM&tbnid=GjkUuHrXHZlozM%3A&vet=10ahUKEwib_-Kvq_fiAhUiZN8KHVRNB4IQMwhMKBQwFA..i&w=620&h=348&bih=710&biw=1100&q=what%20if%20i%20told%20you%20iterative%20solutions%20are%20often%20harder%20than%20recursive%20meme&ved=0ahUKEwib_-Kvq_fiAhUiZN8KHVRNB4IQMwhMKBQwFA&iact=mrc&uact=8#h=348&imgdii=754kAe8lavxPRM:&vet=10ahUKEwib_-Kvq_fiAhUiZN8KHVRNB4IQMwhMKBQwFA..i&w=620)
 
-and my own fishburne meme, unless I just couldn't find it: "What if i told you functional and object oriented programming aren't mutually exclusive."
+
 
 - [The functional imperative](https://www.google.com/imgres?imgurl=https%3A%2F%2Fcs.lmu.edu%2F~ray%2Fimages%2Fiterative-harder.png&imgrefurl=https%3A%2F%2Fcs.lmu.edu%2F~ray%2Fnotes%2Fbacktracking%2F&docid=PeINhEMY0jKgTM&tbnid=fKJSljvDu2GvlM%3A&vet=10ahUKEwiam42JrvfiAhVImuAKHZw9CrgQMwg6KA8wDw..i&w=500&h=302&bih=710&biw=1100&q=fishburne%20what%20if%20i%20told%20you%20iterative%20solutions%20are%20often%20harder%20than%20recursive&ved=0ahUKEwiam42JrvfiAhVImuAKHZw9CrgQMwg6KA8wDw&iact=mrc&uact=8)
 	- See "imperative mood in movies" YT playlist
+	
+##### Memes: b/c there is a dangerous shortage of memes on the interwebs
+
+- Sarcastic Wonka
+	- Oh, you wrote a functor in Haskell? Please prattle on about your doctoral research in category theory.
+	- Oh, you know what a monad is? Please accept this ACM Turing award and Gödel Prize.
+	- Oh, you understand recursion? Please read this meme again.
+	- Oh, you wrote a recursive algorithm? Please tell me more about fixed-point combinators.
+
+- Fishburne matrix "What if I told you..."
+	- ... functional and OO programming are compatible
+	- ... functional programming was invented by mathematicians in the 1920s.
+	- ... linear algebra involves much more than just matrices.
+	- ... all of OOP can be simulated in a functional language like Scheme.
+	- ... OOP was originally designed so that the emphasis should be on _the messages between objects_, rather than _the objects themselves_.
+	- ... an arrow in category theory isn't necessarily a function
+	- ... monads don't have a damn thing to do with burritos
 	
