@@ -106,3 +106,19 @@ Also 1 + a is Maybe since it's either a Just x for some x of type a, or it's Not
 #### Atypical examples
 
 - Legos form a monoidal category with one object; it doesn't matter what it is - let's say it's David Hasselhoff. The arrows are the lego pieces, and composition of two arrows is attaching two lego pieces together. The existence of an identity arrow and proof of associativity is left to the reader. (NB: Finding the identity arrow is more challenging than the proof of associativity, in contrast with most categorial examples.) Now can someone please [get Mr. Hasselhoff a shirt](https://www.youtube.com/watch?v=dkGUI4bnQbQ)?
+
+### Vector Space (V over F) Essentials
+
+#### [Vector space Axiom list, wikipedia:](https://en.wikipedia.org/wiki/Vector_space#Definition)
+- (V, +) is an abelian group
+- Scalar mult/field mult compatiblity
+	- (ab)v = a(bv) (where a, b are both in F)
+	- 1v = v (where 1 is mult id in F),  [this axiom seems redundant, but isn't](https://math.stackexchange.com/questions/1284043/vector-spaces-redundant-axiom)
+- Scalar mult/sum distributes over vector sum/mult
+	- a(u + v) = au + av
+	- (a + b)v = ab + av
+	
+
+
+
+
