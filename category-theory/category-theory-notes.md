@@ -103,4 +103,6 @@ Also 1 + a is Maybe since it's either a Just x for some x of type a, or it's Not
 - An arrow _f_ is _monic_ if it permits left cancellation when composed with other arrows. That is, if g and h are arrows s.t. (f . g = f . h => g = h), then f is monic. This is an appropriate generalization of 1-1 functions, or injective functions, in set theory.
 	- Proof: If f : X -> Y is monic, then f is 1-1. Suppose on the contrary that f is a monic arrow in the category Set, but f is not 1-1 when considered as an ordinary function in set theory. Since f isn't 1-1, there exists x and y for with f(x) = f(y), but x != y. Let g : Z -> X be the and h : Z -> X be arrows.
 
+#### Atypical examples
 
+- Legos form a monoidal category with one object, it doesn't matter what it is, let's say it's David Hasselhoff. The arrows are the lego pieces, and composition of two arrows is attaching two lego pieces together. The existence of an identity arrow and proof of associativity is left to the reader. Now can someone please [get Mr. Hasselhoff a shirt](https://www.youtube.com/watch?v=dkGUI4bnQbQ)?
