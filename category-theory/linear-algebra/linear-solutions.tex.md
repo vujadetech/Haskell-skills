@@ -1,3 +1,6 @@
 ### Abstract Linear Algebra, Curtis
-
-\psi \Phi $A$ $lt; \alpha
+ $E=mc^2$
+ 
+ \[x^2\]
+ 
+ \(y^2\) 
