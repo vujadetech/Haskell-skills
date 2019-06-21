@@ -118,6 +118,8 @@ Also 1 + a is Maybe since it's either a Just x for some x of type a, or it's Not
 	- a(u + v) = au + av
 	- (a + b)v = ab + av
 	
+	
+	
 
 
 
