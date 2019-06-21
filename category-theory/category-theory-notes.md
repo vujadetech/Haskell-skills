@@ -105,4 +105,4 @@ Also 1 + a is Maybe since it's either a Just x for some x of type a, or it's Not
 
 #### Atypical examples
 
-- Legos form a monoidal category with one object, it doesn't matter what it is, let's say it's David Hasselhoff. The arrows are the lego pieces, and composition of two arrows is attaching two lego pieces together. The existence of an identity arrow and proof of associativity is left to the reader. Now can someone please [get Mr. Hasselhoff a shirt](https://www.youtube.com/watch?v=dkGUI4bnQbQ)?
+- Legos form a monoidal category with one object; it doesn't matter what it is - let's say it's David Hasselhoff. The arrows are the lego pieces, and composition of two arrows is attaching two lego pieces together. The existence of an identity arrow and proof of associativity is left to the reader. (NB: Finding the identity arrow is more challenging than the proof of associativity, in contrast with most categorial examples.) Now can someone please [get Mr. Hasselhoff a shirt](https://www.youtube.com/watch?v=dkGUI4bnQbQ)?
