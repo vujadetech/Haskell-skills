@@ -71,7 +71,7 @@ So there you have it, 5 outstanding type theory. Which type theory do you plan t
 
 #### Generic jokes, yuks and laffs (not category theory specific, but hopefully as or more hilarious, or nearly as much, one can only hope)
 
-- Definition of _homomorphism_: In abstract algebra and category theory, a  _homomorphism_ is a ... you know what, it doesn't matter because whatever that morphism does with his partner in the privacy of his own functor is his own business.
+- Definition of _homomorphism_: In abstract algebra and category theory, a  _homomorphism_ is a ... you know what, it doesn't matter what a homomorphism is because whatever that morphism does with his partner in the privacy of his own functor is his own business.
 
 - Open source software, not to be confused with: open source softwear, open sores software, open sores softwear, or "Open sores, soft where?"
 
@@ -121,7 +121,8 @@ and [base cases](https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn-images-1
 	- ... technically, Jesus was a zombie
 	- ... [vulnerability doesn't betray weakness, but strength](https://www.youtube.com/watch?v=iCvmsMzlF7o)
 	- ... someone who suggests that the best way to learn algorithms is to read the [CLRS book](https://www.amazon.com/Introduction-Algorithms-Press-Thomas-Cormen-ebook/dp/B007CNRCAO/ref=sr_1_2?keywords=clrs+algorithm&qid=1561076115&s=gateway&sr=8-2) probably hasn't
+	- ... a function with return type _void_ in C language doesn't mean that it returns __nothing__, but that it returns __one thing__, namely, the single instance of the unit type, which in C language is called _void_
 
-
+##### Skit, Philip Wadler's "Theorem's for free!"/Mathew Lesko
 	
 	
