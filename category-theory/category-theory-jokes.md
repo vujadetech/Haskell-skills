@@ -102,7 +102,7 @@ and [base cases](https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn-images-1
 
 - Fishburne matrix "What if I told you..."
 	- ... functional and OO programming are compatible
-	- ... an OO system forms a category where the objects are classes and the morphisms are messages passed between class instances
+	- ... an OO system forms a [category](https://en.wikipedia.org/wiki/Category_theory) where the objects are classes and the [morphisms](https://en.wikipedia.org/wiki/Morphism) are messages passed between class instances
 	- ... functional programming was invented by mathematicians in the 1920s
 	- ... linear algebra involves much more than just matrices (so much so that it is sometimes affectionally chided as being [abstract nonsense](https://en.wikipedia.org/wiki/Abstract_nonsense))
 	- ... all of OOP can be simulated in a functional language like Scheme
@@ -113,9 +113,15 @@ and [base cases](https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn-images-1
 	- ... the sequence "1 1 1 1 1 1 1 1 1 1" could be considered random
 	- ... solid objects are composed primarily of empty space
 	- ... at the level of atomic particles, nature is fundamentally random
-	- ... mathematics existed for millenia before the introduction of probability theory, when it was introduced it was considered heretical, and even to this day there isn't complete agreement on what constitutes randomness owing to subtleties in the differences of randomness as defined by mathematicians, computer scientists and philosophers like Kolmogorov, Martin-Löf, Chaitin, Church and Borel.
-	- ... randomness in quantum mechanics isn't mutually exclusive with determinism in philosophy
+	- ... mathematics existed for millenia before the introduction of probability theory, and when it was introduced it was considered heretical, and even to this day there isn't complete agreement on what constitutes randomness owing to subtleties in the differences of randomness as defined by mathematicians, computer scientists and philosophers like Kolmogorov, Martin-Löf, Chaitin, Church and Borel
+	- ... randomness in quantum mechanics isn't mutually exclusive with [determinism](https://en.wikipedia.org/wiki/Determinism) in philosophy
 	- ... religious/spiritual belief is contradicted neither by biological evolution nor by philosophical determinism
 	- ... Charles Darwin was a minister before he became a biologist
+	- ... if a baby alligator is flushed down the toilet, it won't grow up to become a giant alligator that lives inside the sewer system
+	- ... technically, Jesus was a zombie
+	- ... [vulnerability doesn't betray weakness, but strength](https://www.youtube.com/watch?v=iCvmsMzlF7o)
+	- ... someone who suggests that the best way to learn algorithms is to read the [CLRS book](https://www.amazon.com/Introduction-Algorithms-Press-Thomas-Cormen-ebook/dp/B007CNRCAO/ref=sr_1_2?keywords=clrs+algorithm&qid=1561076115&s=gateway&sr=8-2) probably hasn't
+
+
 	
 	
