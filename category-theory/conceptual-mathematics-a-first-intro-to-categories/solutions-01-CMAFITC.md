@@ -52,4 +52,9 @@
 (b) The converse doesn't hold since h could be injective so that if a1 != a2, then h(a1) != h(a2), but (gf)(a1) = (gf)(a2) since f(a1) = f(a2). Since g operates on results of f, g gets the "collapsed" versions since f sends a1 and a2 to the same member of B before g is applied.
 
 - __Ex 2__ (a) Let a be in A, so h(a) = (gf)(a) = g(f(a)) and thus f(a) is the desired b in B, since f : A -> B.
-(b) The converse holds since one can construct f by setting f(a) = b for the b in h(a) = g(b). If there's more than one option for b, particularly in a context where the set of candidates is being chosen from an indexed family of uncountably infinite sets, then that that might require invoking the axiom of choice. But modulo those concerns, for example a coder who's making, say, an _Angry Birds_ knockoff, we'll be fine.
+(b) The converse holds since one can construct f by setting f(a) = b for the b in h(a) = g(b). If there's more than one option for b, particularly in a context where the set of candidates is being chosen from an indexed family of uncountably infinite sets, then that that might require invoking the axiom of choice. But modulo those concerns, for example a coder who's making, say, an _Angry Birds_ knockoff, we'll be fine. 
+
+
+
+
+
