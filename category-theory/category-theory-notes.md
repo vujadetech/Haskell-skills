@@ -1,7 +1,6 @@
 
 #### Notes in no particular order
 
-
 - __Definition[1]:__ A category with exactly one object is a __monoid__.
 
 [1]: Conceptual Math: A first intro to categories, p166.
@@ -18,6 +17,17 @@
 - __Definition of constant map (p71):__ A map that can be factored through 1 (that is, any singleton set) is called a __constant map.__
 
 - __Defn of section (p72):__ f : A -> B is a __section__ of g : B -> A if (gf) = I_A.
+
+- __Sections vs Retractions (p73):__ If gf is an identity map then we can say either that g is a __retraction__ of f, or that f is a __section__ of g.
+	- A section can also be called a _choice of representatives_ (p95).
+	- The primitive notion is __isomorphism__. The fancy abstract notion is __number__ (p97).
+	
+- A __point__ is a map from a singleton set 1 (p99).
+
+- __Categories in real life (p76):__ Interesting example of using category theory in a chinese restaurant by stacking different types of plates, obviating the need for the workers to speak the same language, "l'addition š'il vous plaît" = "the bill, please".
+
+- __Retracts and Idempotents (p99):__ A is a __retract__ of B means that there are maps s : A -> B and r : B -> A with rs = I_A. It's written A <_R B.
+
 
 - ##### Powerset (from wikipedia)
 	Example: the powerset functor is also a monad

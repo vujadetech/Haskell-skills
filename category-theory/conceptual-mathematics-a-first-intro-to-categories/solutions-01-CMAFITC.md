@@ -54,7 +54,11 @@
 - __Ex 2__ (a) Let a be in A, so h(a) = (gf)(a) = g(f(a)) and thus f(a) is the desired b in B, since f : A -> B.
 (b) The converse holds since one can construct f by setting f(a) = b for the b in h(a) = g(b). If there's more than one option for b, particularly in a context where the set of candidates is being chosen from an indexed family of uncountably infinite sets, then that that might require invoking the axiom of choice. But modulo those concerns, for example a coder who's making, say, an _Angry Birds_ knockoff, we'll be fine. 
 
+__Session 9, Retracts and Idempotents__
 
+- __Ex 1__ Suppose there is no map from A to B. Then A is non-empty, for otherwise the empty function would be the required map. Since A is non-empty, it has at least one point. Then B has no points since if B had a point whose target was, say, {b} for some b in B, then the constant map (\_ -> b) : A -> B would be such a map.
+
+- __Ex 2__ (R) Set s = r = I_A. \(T\) If rs = I\_A and tu = I\_B, then form retraction r': C -> A by setting r' := rt, and similarly set s' := us. Then r's' = (rt)(us) = r(t(us)) = r(tu)s = r(I\_B)s = rs = I\_A, and thus A <_R C.
 
 
 
