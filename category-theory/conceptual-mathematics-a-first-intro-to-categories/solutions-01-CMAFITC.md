@@ -38,5 +38,14 @@
 - __Ex 2__ f(odd) = neg, f(even) = pos.
 
 - __Ex 3__
-	- (a) p doesn't have an inverse since if it did have an inverse, say q, then q from R+ to R+ would be q(x) = x - 1, but then q(
-	- (b) 
+	- (a) Fails since p(x)p(y) != p(xy) b/c of extra terms
+	- (b) Fails the sq(x inverse) = (sq(x)) inverse test
+	- (c) Fails the sq(x inverse) = (sq(x)) inverse test
+	- (d) Passes since m(x + y) = -(x + y), and m(x) + m(y) = -(x + y), and inverse is itself, m(x) = -x, and m(m(x)) = x is the id map.
+	- (e) Fails since m(xy) = -xy, but m(x)m(y) = (-x)(-y) = xy
+	- (f) This is the crudest one since c(-1) = -1, which is not in R_>0, so it's not even a function.
+	
+	
+#### Session 5
+
+- __Ex 1__ Since a1 is a mapping 1 -> A, then a1 = (\_ -> a1') and likewise a2 = (\_ -> a2'), where a1', a2' are in A. Since they're equal when composed with f, the 1 in the src of a1 must the be the same as the one in a2, so 1 = a singleton set whose sole member has a name which isn't important, let's say it's David Hasselhoff. So 1 = {David Hasselhoff}. On second thought, let's say it's x. So 1 = {x}. So f composed with (f * a1) is pretty boring since it can only do one thing: send x -> a1' -> f(a1'). Since (f * a1) = (f * a2), (f * a2) also sends x -> a1 -> f(a1). Then 

@@ -11,7 +11,7 @@
 	- g . f is defined only if dom(g) = co(f).
 	- dom(g . f) = dom(f) and co(g . f) = co(g).
 
-
+- __Determination Rule (p68)__: Given maps f : A -> B and h : A -> C, find all maps g : B -> C s.g. gf = h.
 
 - ##### Powerset (from wikipedia)
 	Example: the powerset functor is also a monad

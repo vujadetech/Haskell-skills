@@ -122,7 +122,11 @@ and [base cases](https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn-images-1
 	- ... [vulnerability doesn't betray weakness, but strength](https://www.youtube.com/watch?v=iCvmsMzlF7o)
 	- ... someone who suggests that the best way to learn algorithms is to read the [CLRS book](https://www.amazon.com/Introduction-Algorithms-Press-Thomas-Cormen-ebook/dp/B007CNRCAO/ref=sr_1_2?keywords=clrs+algorithm&qid=1561076115&s=gateway&sr=8-2) probably hasn't
 	- ... a function with return type _void_ in C language doesn't return __nothing__; rather, it returns __one thing__, namely, the single instance of the unit type, which in C language is (confusingly, given its meaning elsewhere in type theory) called _void_
-	- ... since classes in OO languages can specify member functions, and object instances of a class can be passed as parameters which means their member functions are also passed as (sub)parameters, then just as functional languages have functions as first-class citizens, OO languages do as well
+	- ... since classes in OO languages can specify member functions, and object instances of a class can be passed as parameters, which means their member functions are also passed as (sub)parameters, then just as functional languages have functions as first-class citizens, OO languages do as well
+	- ... in _Genesis_ it didn't say that Eve at an apple, only that she ate a piece of fruit.
+	- ... [Gestalt psychologist Kurt Koffka](https://en.wikipedia.org/wiki/Gestalt_psychology) didn't coin the phrase "the whole is _greater than_ the sum of its parts," but he did say "the whole is _something else_ than the sum of its parts."
+	- ... Jesus was jewish
+	- ... the entirety of mathematics is predicated on axioms, which are statements that are given without proof, and yet presumed to be true by the very definition of the word "axiom."
 
 ##### Skit, Philip Wadler's "Theorem's for free!"/Mathew Lesko
 
