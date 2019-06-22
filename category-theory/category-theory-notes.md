@@ -11,7 +11,13 @@
 	- g . f is defined only if dom(g) = co(f).
 	- dom(g . f) = dom(f) and co(g . f) = co(g).
 
-- __Determination Rule (p68)__: Given maps f : A -> B and h : A -> C, find all maps g : B -> C s.g. gf = h.
+- __Determination Rule (p68):__ Given maps f : A -> B and h : A -> C, find all maps g : B -> C s.g. gf = h.
+
+- __Choice Problem (p71):__ Given h : A -> C and g : B -> C, find f : A -> B s.t. gf = h. This entails choosing for each element a of A an element b s.t. g(b) = h(a). 
+
+- __Definition of constant map (p71):__ A map that can be factored through 1 (that is, any singleton set) is called a __constant map.__
+
+- __Defn of section (p72):__ f : A -> B is a __section__ of g : B -> A if (gf) = I_A.
 
 - ##### Powerset (from wikipedia)
 	Example: the powerset functor is also a monad
