@@ -28,6 +28,8 @@
 
 - __Retracts and Idempotents (p99):__ A is a __retract__ of B means that there are maps s : A -> B and r : B -> A with rs = I_A. It's written A <_R B.
 
+- __Section, Retraction definitions (wiki):__ Retraction of f = left inverse of f, Section = right inverse. If fg : B -> B is I_B, then g is a section of f, and f is a section of g. 
+
 
 - ##### Powerset (from wikipedia)
 	Example: the powerset functor is also a monad

@@ -56,9 +56,11 @@
 
 __Session 9, Retracts and Idempotents__
 
-- __Ex 1__ Suppose there is no map from A to B. Then A is non-empty, for otherwise the empty function would be the required map. Since A is non-empty, it has at least one point. Then B has no points since if B had a point whose target was, say, {b} for some b in B, then the constant map (\_ -> b) : A -> B would be such a map.
+- __Ex 1__ Suppose there is no map from A to B. Then A is non-empty, for otherwise the empty function would be the required map. Since A is non-empty, it has at least one point. Then B has no points since if B had a point whose target was, say, {b} for some b in B, then the constant map (\_ -> b) : A -> B would be such a map from A to B. #
 
 - __Ex 2__ (R) Set s = r = I_A. \(T\) If rs = I\_A and tu = I\_B, then form retraction r': C -> A by setting r' := rt, and similarly set s' := us. Then r's' = (rt)(us) = r(t(us)) = r(tu)s = r(I\_B)s = rs = I\_A, and thus A <_R C.
+
+- __Ex 3__ Set f = r's, f^(-1)^ = rs', then f \* f^(-1)^ = (r's)(rs') = r'(sr)s' = r' I_B s' = r's' = I_A', and other direction is similar.  
 
 
 

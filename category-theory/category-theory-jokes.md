@@ -36,6 +36,7 @@ He was doing so much hand-waving while presenting his paper at a conference that
 		- Darin from Bewitched
 		- [Eminem's Boy Band construction algorithm](https://www.youtube.com/watch?v=0QOya9-lwQk&feature=youtu.be&t=9m40s) - no Eminem wasn't flirting with Weird Al Yankovic, although the "interview" is hilarious, you know what I'm sayin'?
 		- Memes = (famous quote/movie line/song lyric/etc) modulo (a common experience but in a different area than the original)
+		- [TV Guide's description of connections in Netflix's Dark](https://www.tvguide.com/news/dark-how-everything-connected-netflix/): "One day, while walking home in the rain, Elisabeth meets the mysterious stranger Noah, who is both her mother Charlotte's father and her own future husband." [Thick Kentucky accent]: "If her mother's father is also her future husband, that's weird even by West Virginia standards, and even modulo the time travel aspect, I teh you wut."
 
 #### More hilarious jokes
 - [Gray code](https://en.wikipedia.org/wiki/Gray_code), not to be confused with _The Gary Code_, which is the set of rules governing the Gary, Indiana based [Fight Club](https://en.wikipedia.org/wiki/Fight_Club).
